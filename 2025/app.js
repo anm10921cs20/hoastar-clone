@@ -18,7 +18,7 @@ function btn1() {
             },1000)
         }
         else {
-            time.innerText = "Please Wait" + counter + "S";
+            time.innerText = "Please Wait For Downloading " + counter + "s";
         }
     }, 1000);
 }
