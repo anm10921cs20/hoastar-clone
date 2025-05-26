@@ -16,9 +16,13 @@ function btn1() {
             {
                 window.location.href = "https://dl6.hotshare.top/Madha_Gaja_Raja_2025_HDRip_360p_HD.mp4"
             },1000)
+            message.timeout = setTimeout(() => {
+                message.innerText = "";
+            }, 3000);
         }
         else {
             time.innerText = "Please Wait For Downloading " + counter + "s";
+            time.style.color = "#ff4343";
         }
     }, 1000);
 }
