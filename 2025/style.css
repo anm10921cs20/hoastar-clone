@@ -335,7 +335,7 @@ body {
     }
     .movies-link
     {
-        height: 1800px;
+        height: 2100px;
         width: 1300px;
         margin: auto;
         background: #16181f;
@@ -375,29 +375,91 @@ body {
         background: linear-gradient(90deg, rgba(2, 224, 39, 0.5), rgba(39, 151, 22, 0.5));
         padding: 1px;
     }
-    .download-links>ul
-    {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100px;
-    }
-    .download-links>ul>li
+    .download-links>button
     {
         list-style-type: none;
-        margin: 10px 10px;
+        margin: 10px 19px;
+        border: none;
+        background-color: #252833;
          padding: 10px 20px;
         border-radius: 5px;
-        background-color: #252833;
+        transition: all 1s ease-in-out;
+        width:  140px;
     }
-    .download-links>ul>li>a
+    .download-links>button>a
     {
         text-decoration: none;
         color: #fff;    
         margin-left: 4px;
         transition: all 0.3s ease-in-out;
     }
-    
+    .download-links>button:hover
+    {
+        color: #fff;
+        background-color:#ff4343;
+    }
+    .download-links>button:visited
+    {
+        background-color: #ff4343;
+        color:#fff;
+        
+    }
+    .page-tags
+    {
+         width: 100%;
+        height: 24px;
+        background: linear-gradient(90deg, rgba(2, 224, 39, 0.5), rgba(39, 151, 22, 0.5));
+        padding: 3px;
+    }
+    .page-tags>h4
+    {
+        font-size: 15px;
+    }
+    .unlist>li
+    {
+        list-style-type: none;
+        margin-left: 20px;
+    }
+    .fa-instagram
+    {
+        color: #fff;
+        background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+        font-size: 21px;
+        padding: 4px 5px;
+        border-radius: 3px;
+    }
+    .fa-facebook
+    {
+        color: #fff;
+        background-color:	#1877F2;  
+        font-size: 21px;
+        padding: 4px 5px;
+        border-radius: 3px;
+    }
+    .fa-youtube
+    {
+        color:  #FF0000;
+        background-color: #fff;
+        font-size: 21px;
+        padding: 4px 5px;
+        border-radius: 3px;
+    }
+    .fa-telegram
+    {
+        color: dodgerblue;
+        background-color: #fff;
+        font-size: 21px;
+        padding: 4px 5px;
+        border-radius: 3px;
+    }
+    .fa-whatsapp
+    {
+        color: #fff;
+        background-color: #25D366;
+        font-size: 21px;
+        padding: 4px 5px;
+        border-radius: 3px;
+    }
    
 
     
@@ -457,9 +519,52 @@ body {
 
     .footer-container {
         width: 100%;
-        height: 600px;
+        height: 400px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+    .footer-nav-bar
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        list-style-type: none;
+    }
+    .footer-nav-bar>span
+    {
+        margin: 0 200px;
+        font-size: 1rem;
+        color: #fff;
+        text-decoration: none;
+    }
+    .footer-nav-bar>li
+    {
+        margin: 0 20px;
+    }
+    .footer-nav-bar a
+    {
+        color: #ffff;
+        text-decoration: none;
+        position: relative;
+        padding: 6px 0;
+    }
+    .footer-nav-bar a:before
+    {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: #ff4343;
+        height: 2px;
+        border-radius: 12px;
+        width: 0%;
+        transition: width 0.6s ease-in-out;
+    }
+    .footer-nav-bar a:hover:before
+    {
+        width: 100%;
+        transition: width 0.6s ease-in-out;
+    } 
 }

@@ -52,10 +52,11 @@
             </div>
             <!-- nav bar menu buttons -->
             <ul class="nav-menu">
-                <li><a href="#"><i class="fa-solid space fa-house"></i> Home</a></li>
-                <li><a href="#"><i class="fa-solid space fa-clapperboard"></i> Movies</a></li>
-                <li><a href="#"><i class="fa-solid space fa-magnifying-glass"></i> Search</a></li>
-                <li><a href="#"><i class="fa-solid space fa-user"></i> Contact</a></li>
+                <li><a href="../home.html"><i class="fa-solid space fa-house"></i> Home</a></li>
+                <li><a href="../movies collection/movie.html"><i class="fa-solid space fa-clapperboard"></i> Movies</a>
+                </li>
+                <li><a href="../search/search.html"><i class="fa-solid space fa-magnifying-glass"></i> Search</a></li>
+                <li><a href="../actor collection/actor.html"><i class="fa-solid space fa-user"></i> Actors</a></li>
                 <li><a href="#"><i class="fa-solid space fa-right-to-bracket"></i> Logout</a></li>
             </ul>
             <img src="../images/43_Amazing_Business_Logos_With_High_ROI_-_99designs-removebg-preview.png" width="120px"
@@ -96,12 +97,12 @@
 
                 <!--conteent center contaienr-->
                 <!--line top-->
-                
+
                 <div class="movies-link">
                     <div class="line">
                         <h4 class="text-light text-center">Movie Description</h4>
                     </div>
-                <br><br><br>
+                    <br><br><br>
                     <h1 class="text-white p-4 text-center"> Madha Gaja Raja (2025)</h1>
                     <br>
                     <!--img contianer-->
@@ -128,36 +129,162 @@
                     <div class="line">
                         <h4 class="text-light text-center">Download Links</h4>
                     </div>
-                    <br><br>
-                    <div class="download-links">
-                        <ul>
-                            <button onclick="btn1()" class="fas fa-download text-danger"> <a  target="_blank"> Download Madha Gaja Raja (360p)</a></button>
-                            <button  class="fas fa-download text-success"> <a href="https://example.com/download/madhagajaraja-1080p" target="_blank"> Download Madha Gaja Raja (720p)</a></button>
-                            <button i  class="fas fa-download text-success"> <a href="https://example.com/download/madhagajaraja-hdrip" target="_blank"> Download Madha Gaja Raja (1080p)</a></button>
-                        </ul>
+                    <br>
+                    <h6 class="text-danger text-center">Downloading Quality</h6><br>
+                    <div class="download-links text-center">
+                        <button onclick="btn1()"> <a class="a-download"><i class="fas fa-download"></i>
+                                360p</a></button>
+                        <button onclick="btn2()"> <a class="a-download"><i class="fas fa-download "></i>
+                                720p</a></button>
+                        <button onclick="btn3()"> <a class="a-download"><i class="fas fa-download "></i> 1080p</a></button>
+                        <br><br>
                         <div class="javascript-alert">
-                            <p class="text-success text-center" id="message-para"><span id="time"></span></p>
+                            <p class="text-success text-center" id="message-para"></p><span id="time"></span>
+                        </div><br><br>
+                        <!--page tags creation-->
+                        <div class="page-tags">
+                           <h4 class="text-light text-start">Page Tags</h4>
+                        </div>
+                        <br>
+                        <p class="text-light text-start">Madha Gaja Raja HD Tamil Movie Download, Madha Gaja Raja HD Full Movie Download Moviesda. Madha Gaja Raja HD Movie HD Download, Madha Gaja Raja (HD) Movie isaimini. Madha Gaja Raja (HD) Moviesda, Madha Gaja Raja (HD) Movie 1080p HD Download. Download Madha Gaja Raja HD Movie 720p Download.</p>
+                        <br>
+                        <p class="text-light text-start px-2">Contact Us </p>
+                        <div class="nav-social">
+                            <ul class="nav-social-menu d-flex justify-content-start unlist">
+                                <li><a href="https://ig.me/m/mahanmovies2025?text=please%20tell%20your%20querry" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="http://www.youtube.com/@mahan_prince_official" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                                <li><a href="https://t.me/Mahanprince12" target="_blank"><i class="fa-brands fa-telegram"></i></a></li>
+                                <li><a href="https://wa.link/uymfd9" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                        <!--footer container--><br><br><br><br><br><br><br><br>
+                        <div class="footer-main">
+                             <ul class="footer-nav-bar">
+                                <li>
+                                    <a href="../home.html" target="_blank">Home</a>
+                                </li>
+                                <li>
+                                    <a href="../movies collection/movie.html" target="_blank">Movies</a>
+                                </li>
+                                <li>
+                                    <a href="../search/search.html" target="_blank">Search</a>  
+                                </li>
+                                <li>
+                                    <a href="../actor collection/actor.html" target="_blank">Actors</a> 
+                                </li>
+                                <span class="text-end"> &copy; Copyright 2025 Mahan Movies All Rights Reserved </span>
+                            </ul>
+                        </div>
+                        <div class="footer-container">
+                           
+                        </div>
+
+
+                    </div>
+
                 </div>
-
-
-
-
-
-
-
-
-                <!--footer container-->
-
-                <div class="footer-container">
-
-                </div>
-
-
             </div>
-
-        </div>
-    </div>
 </body>
-<script src="app.js"></script>
+<script>
+    function btn1() {
+        function countdown1() {
+            const time = document.querySelector('#time');
+            const message = document.getElementById('message-para');
+            var counter = 6;
+            const interval = setInterval(() => {
+                counter--;
+                if (counter <= 0) {
+                    clearInterval(interval);
+                    time.style.display = "none";
+                    message.innerText = "Downloading Started...";
+                    setTimeout(() => {
+                        window.location.href = "https://dl6.hotshare.top/Madha_Gaja_Raja_2025_HDRip_360p_HD.mp4"
+                    }, 1000)
+                    message.timeout = setTimeout(() => {
+                        message.innerHTML="";
+                    }, 3000);
+                }
+                else {
+                    time.style.display = "block";
+                    time.innerText = "Please Wait For Downloading " + counter + "s";
+                    time.style.color = "#ff4343";
+                }
+            }, 1000);
+        }
+        countdown1();
+    }
+    //function 2
+
+    function btn2() {
+
+        function countdown2() {
+            const time = document.querySelector('#time');
+            const message = document.getElementById('message-para');
+            var counter = 6;
+            const interval = setInterval(() => {
+                counter--;
+                if (counter <= 0) {
+                    time.style.display = "none";
+                    clearInterval(interval);
+                    message.innerText = "Downloading Started...";
+                    setTimeout(() => {
+                        window.location.href = "https://dl9.hotshare.top/Moviesda.Mobi_-_Madha_Gaja_Raja_2025_HDRip_720p_HD.mp4"
+                    }, 1000)
+                    message.timeout = setTimeout(() => {
+                        message.textContent="";
+                    }, 3000);
+                }
+                else {
+                    time.style.display = "block";
+                    time.innerText = "Please Wait For Downloading " + counter + "s";
+                    time.style.color = "#ff4343";
+                }
+            }, 1000);
+        }
+        countdown2();
+
+    }
+
+    //function 3
+
+    function btn3() {
+
+        function countdown3() {
+            const time = document.querySelector('#time');
+            const message = document.getElementById('message-para');
+            var counter = 6;
+            const interval = setInterval(() => {
+                counter--;
+                if (counter <= 0) {
+                    time.style.display = "none";
+                    clearInterval(interval);
+                    message.innerText = "Downloading Started...";
+                    setTimeout(() => {
+                        window.location.href = "https://dl10.hotshare.click/Moviesda.Mobi_-_Madha_Gaja_Raja_2025_HDRip_1080p_HD.mp4"
+                    }, 1000)
+                    message.timeout = setTimeout(() => {
+                        message.textContent="";
+                    }, 3000);
+                }
+                else {
+                    time.style.display = "block";
+                    time.innerText = "Please Wait For Downloading " + counter + "s";
+                    time.style.color = "#ff4343";
+                }
+            }, 1000);
+        }
+        countdown3();
+
+    }
+</script>
 
 </html>
