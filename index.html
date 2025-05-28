@@ -34,21 +34,71 @@
         }
 
         .container-main {
-            height: 919px;
+            height: 100vh;
+            width: 100%;
             background-image: url('https://media.istockphoto.com/id/1399173796/vector/simple-gradient.jpg?s=612x612&w=0&k=20&c=VJV1yj0KYExeBqY1b0PwsYNZiLm2uq-I7gVsWHF4-Ko=');
             background-repeat: no-repeat;
             background-size: cover;
         }
 
-        /* Glassmorphism card effect */
         .card {
-            backdrop-filter: blur(25px) saturate(200%);
-            -webkit-backdrop-filter: blur(25px) saturate(200%);
-            background-color: rgba(255, 255, 255, 0.15);
-            border-radius: 12px;
-            border: 1px solid rgba(209, 213, 219, 0.3);
-            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            border: transparent;
+            height: 100vh;
+            width: 100%;
+            margin: auto;
         }
+
+        .form-input {
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(7.3px);
+            -webkit-backdrop-filter: blur(7.3px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            display: block;
+            height: 400px;
+            width: 300px;
+            padding: 40px 34px ;
+        }
+        .h1tag
+        {
+            text-align: center;
+            color: #b3b3b3;
+        }
+        
+      
+            
+        
+        input
+        {
+            padding:7px 13px;
+            margin-top:10px ;
+            border-radius: 12px;
+            border: none;
+            width: 100%;
+            background-color: transparent;
+            border: 1px solid #b3b3b3;
+        }
+        input:hover,input:focus
+        {
+            outline: none;
+        }
+        .btn.button
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-height: 35px;
+            min-height: 35px;
+            width: 100%;
+        }
+        
+        
     </style>
 
 </head>
@@ -57,14 +107,13 @@
     <!--container content main-->
     <div class="container-main">
         <div class="card">
-            <form id="form" action="https://formsubmit.co/mahanvishnu3@gmail.com" method="POST" class="form-input">
-                    <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
-                    <input type="hidden" name="_subject" value="Mahan Movies Login Register!">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_template" value="box">
-                    <input type="text" id="name" name="name" required>
-                    <input type="email" id="email" name="email" required>
-                    <button type="submit">Send</button>
+            
+            <form id="form" class="form-input"><br>
+                <h1 class="h4  h1tag text-center p-1">Form Register</h1><br>
+                
+                <input type="text" id="name" name="name" placeholder="User Name" required><br>
+                <input type="email" id="email" name="email" placeholder="Email Address" required><br><br>
+                <button type="submit" class="btn btn-danger button"  >Send</button>
             </form>
         </div>
     </div>
@@ -74,20 +123,19 @@
     const names = document.getElementById('name');
     const email = document.getElementById('email');
 
-    form.addEventListener('submit',function(e)
-    {
+    form.addEventListener('submit', function (e) {
         e.preventDefault();
 
         const namevalue = names.value;
         const emailvalue = email.value;
 
-        localStorage.setItem('name-value',namevalue);
-        localStorage.setItem('email-value',emailvalue);
-        setTimeout(function()
-        {
-             window.location.href ="home.html";
-        },1000)
-       
+        localStorage.setItem('name-value', namevalue);
+        localStorage.setItem('email-value', emailvalue);
+        setTimeout(function () {
+            window.location.href = "home.html";
+        }, 1000)
+
     })
 </script>
+
 </html>
