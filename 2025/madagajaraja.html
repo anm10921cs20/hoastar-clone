@@ -45,8 +45,8 @@
                     <i class="fa-solid space1 fa-circle-user"></i>
                 </div>
                 <div class="name">
-                    <h5>mahavishnu<br>
-                        <p>New User</p>
+                    <h5 id="username">
+                       
                     </h5>
 
                 </div>
@@ -58,7 +58,7 @@
                 </li>
                 <li><a href="../search/search.html"><i class="fa-solid space fa-magnifying-glass"></i> Search</a></li>
                 <li><a href="../actor collection/actor.html"><i class="fa-solid space fa-user"></i> Actors</a></li>
-                <li><a href="#"><i class="fa-solid space fa-right-to-bracket"></i> Logout</a></li>
+                <li><a href="../index.html"><i class="fa-solid space fa-right-to-bracket"></i> Logout</a></li>
             </ul>
             <img src="../images/43_Amazing_Business_Logos_With_High_ROI_-_99designs-removebg-preview.png" width="120px"
                 height="120px" class="img-logo-nav" alt="">
@@ -286,6 +286,12 @@
         countdown3();
 
     }
+
+    const username = document.getElementById('username');
+    const names =  localStorage.getItem('name-value');
+
+    username.style.color = "#ff4343";
+    username.textContent = names;
 </script>
 
 </html>

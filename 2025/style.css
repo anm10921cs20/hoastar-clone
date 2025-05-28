@@ -1136,7 +1136,7 @@ body {
 
     .nav-bar:hover {
         width: 10%;
-        transition: width 1s ease-in-out;
+        
     }
 
     .nav-bar:hover .name>h5 {
@@ -1151,7 +1151,7 @@ body {
     .nav-menu>li>a:hover {
         background-color: rgb(61, 59, 59);
         border-radius: 5px;
-        transition: width 0.9s ease-in-out;
+        
         
     }
 
