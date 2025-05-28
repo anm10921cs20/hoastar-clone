@@ -5,7 +5,7 @@ const btnrght1 =  document.querySelector('.button-arrow2');
 gallery1.addEventListener('wheel',(evt)=>
 {
     evt.preventDefault();
-    gallery1.scrollLeft+=evt.deltaY;
+     gallery1.scrollLeft+=evt.deltaY;
 });
 
 btnlft1.addEventListener('click',() =>
@@ -78,8 +78,93 @@ btnrght4.addEventListener('click',()=>
     gallery4.scrollLeft += 190;
 })
 
+//login page
 const names = localStorage.getItem('name-value');
         const email = localStorage.getItem('email-value');
         const loginname = document.getElementById('valueh');
         loginname.style.color = "#ff4343";  
         loginname.innerText = names;
+
+//mobile scroll
+
+let startX1 = 0;
+let scrollLeft1 = 0;
+let isDown1 = false;
+
+gallery1.addEventListener('touchstart', (e) => {
+    isDown1 = true;
+    startX1 = e.touches[0].pageX - gallery1.offsetLeft;
+    scrollLeft1 = gallery1.scrollLeft;
+});
+
+gallery1.addEventListener('touchmove', (e) => {
+    if (!isDown1) return;
+    e.preventDefault();
+    const x = e.touches[0].pageX - gallery1.offsetLeft;
+    const walk = (startX1 - x);
+    gallery1.scrollLeft = scrollLeft1 + walk;
+});
+
+gallery1.addEventListener('touchend', () => {
+    isDown1 = false;
+});
+
+//box2
+
+gallery2.addEventListener('touchstart', (e) => {
+    isDown1 = true;
+    startX1 = e.touches[0].pageX - gallery1.offsetLeft;
+    scrollLeft1 = gallery1.scrollLeft;
+});
+
+gallery2.addEventListener('touchmove', (e) => {
+    if (!isDown1) return;
+    e.preventDefault();
+    const x = e.touches[0].pageX - gallery1.offsetLeft;
+    const walk = (startX1 - x);
+    gallery1.scrollLeft = scrollLeft1 + walk;
+});
+
+gallery2.addEventListener('touchend', () => {
+    isDown1 = false;
+});
+
+//box3
+
+gallery3.addEventListener('touchstart', (e) => {
+    isDown1 = true;
+    startX1 = e.touches[0].pageX - gallery1.offsetLeft;
+    scrollLeft1 = gallery1.scrollLeft;
+});
+
+gallery3.addEventListener('touchmove', (e) => {
+    if (!isDown1) return;
+    e.preventDefault();
+    const x = e.touches[0].pageX - gallery1.offsetLeft;
+    const walk = (startX1 - x);
+    gallery1.scrollLeft = scrollLeft1 + walk;
+});
+
+gallery3.addEventListener('touchend', () => {
+    isDown1 = false;
+});
+
+//box4
+
+gallery4.addEventListener('touchstart', (e) => {
+    isDown1 = true;
+    startX1 = e.touches[0].pageX - gallery1.offsetLeft;
+    scrollLeft1 = gallery1.scrollLeft;
+});
+
+gallery4.addEventListener('touchmove', (e) => {
+    if (!isDown1) return;
+    e.preventDefault();
+    const x = e.touches[0].pageX - gallery1.offsetLeft;
+    const walk = (startX1 - x);
+    gallery1.scrollLeft = scrollLeft1 + walk;
+});
+
+gallery4.addEventListener('touchend', () => {
+    isDown1 = false;
+});

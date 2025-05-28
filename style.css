@@ -81,9 +81,7 @@ body {
     /* nav logo bar */
 
     .img-logo-nav {
-        position: absolute;
-        bottom: 300px;
-        left: -20px;
+        display: none;
     }
 
     .main-content {
@@ -158,23 +156,15 @@ body {
     }
 
     .ad-btn>h4 {
-        position: absolute;
-        top: 68px;
-        left: 770px;
+        
     }
 
     .container-add-details {
-        position: absolute;
-        left: 674px;
-        top: 133px;
-        font-size: 16px;
-        font-weight: 400;
+        
     }
 
     .btn-install {
-        position: absolute;
-        left: 674px;
-        top: 200px;
+        
 
     }
 
@@ -262,31 +252,13 @@ body {
     .box1 {
         display: flex;
         column-gap: 12px;
-        overflow-x: scroll;
+        overflow-x: auto;
         overflow: hidden;
         scroll-behavior: smooth;    
         width: 100%;
         margin: auto;
         transition: all 2s ease-in-out;
         
-    }
-    .box1>a>img
-    {
-        animation: scrol1 70s linear infinite backwards;
-    }
-    @keyframes scrol1 {
-        0%
-        {
-            transform: translateX(1);
-        }
-        50%
-        {
-            transform: translateX(-4300px);
-        }
-        100%
-        {
-            transform: translateX(100px);
-        }
     }
     
 
@@ -336,24 +308,7 @@ body {
         color: #fff;
         z-index:100;
     }
-    .box2>a>img
-    {
-        animation: scrol2 400s linear infinite backwards;
-    }
-    @keyframes scrol2 {
-        0%
-        {
-            transform: translateX(1);
-        }
-        50%
-        {
-            transform: translateX(-14300px);
-        }
-        100%
-        {
-            transform: translateX(100px);
-        }
-    }
+   
 
     .box2 {
         display: flex;
@@ -412,24 +367,8 @@ body {
         color: #fff;
         z-index:100;
     }
-    .box3>a>img
-    {
-        animation: scrol3 480s linear infinite backwards;
-    }
-    @keyframes scrol3 {
-        0%
-        {
-            transform: translateX(1);
-        }
-        50%
-        {
-            transform: translateX(-14300px);
-        }
-        100%
-        {
-            transform: translateX(100px);
-        }
-    }
+   
+    
 
     .box3 {
         display: flex;
@@ -488,24 +427,7 @@ body {
         color: #fff;
         z-index:100;
     }
-    .box4>a>img
-    {
-        animation: scrol4 400s linear infinite backwards;
-    }
-    @keyframes scrol4 {
-        0%
-        {
-            transform: translateX(0px);
-        }
-        50%
-        {
-            transform: translateX(-15500px);
-        }
-        100%
-        {
-            transform: translateX(100px);
-        }
-    }
+    
 
     .box4 {
         display: flex;
@@ -522,6 +444,16 @@ body {
         border-radius: 5px;
     }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 /* for laptop screens */
