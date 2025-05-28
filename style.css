@@ -36,17 +36,20 @@ body {
         align-items: center;
         height: 40px;
         margin-right: 39px;
-    }
+    }       
 
     .name>h5 {
         font-size: 14px;
         margin-left: 12px;
         text-transform: capitalize;
         visibility: hidden;
+        padding: 4px;
+        color: #ff4343;
     }
 
     .name>h5>p {
         color: #ff4343;
+        
     }
 
     .space {
@@ -624,13 +627,13 @@ body {
     }
     .right-arrow
     {
-        transition: transform 2s ease-in-out;
+        transition: transform 1s ease-in-out;
     }
     .see-all:hover .right-arrow
     {
         color: #ff4343;
         transform: translateX(30px);
-        transition: transform 2s ease-in-out;
+        transition: transform 1s ease-in-out;
     }
     .button-ctrl {
         display: flex;

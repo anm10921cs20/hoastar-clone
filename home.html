@@ -39,8 +39,7 @@
                                         <i class="fa-solid space1 fa-circle-user"></i>
                                 </div>
                                 <div class="name">
-                                        <h5 id="valueh">mahavishnu<br>
-                                                <p>New User</p>
+                                        <h5 id="valueh"><br>
                                         </h5>
 
                                 </div>
@@ -2129,9 +2128,13 @@
 </body>
 <script src="app.js"></script>
 <script>
-        const name = localStorage.getItem('namevalue');
-        const email = localStorage.getItem('emailvalue');
-
-        document.getElementById('valueh').innerHTML= name;
+        const names = localStorage.getItem('name-value');
+        const email = localStorage.getItem('email-value');
+        alert('welcome '+ names + ' Scroll movies')
+        const loginname = document.getElementById('valueh');
+        loginname.style.color = "#ff4343";  
+        loginname.innerText = names;
+        console.log(names);
+        console.log(email);
 </script>
 </html>

@@ -57,9 +57,11 @@
     <!--container content main-->
     <div class="container-main">
         <div class="card">
-            <form action="https://formsubmit.co/mahanvishnu3@gmail.com" method="POST" class="form-input">
-                    <input type="hidden" name="_next" value="https://mahanmovie.vercel.app/">
-                    <input type="hidden" name="_captcha" value="false"> 
+            <form id="form" action="https://formsubmit.co/mahanvishnu3@gmail.com" method="POST" class="form-input">
+                    <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                    <input type="hidden" name="_subject" value="Mahan Movies Login Register!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="box">
                     <input type="text" id="name" name="name" required>
                     <input type="email" id="email" name="email" required>
                     <button type="submit">Send</button>
@@ -68,13 +70,24 @@
     </div>
 </body>
 <script>
-    const name = document.getElementById('name');
+    const form = document.getElementById('form');
+    const names = document.getElementById('name');
     const email = document.getElementById('email');
 
-    const namevalue = name.value;
-    const emailvalue = email.value;
+    form.addEventListener('submit',function(e)
+    {
+        e.preventDefault();
 
-    localStorage.getItem('namevalue',namevalue);
-    localStorage.getItem('emailvalue',emailvalue);
+        const namevalue = names.value;
+        const emailvalue = email.value;
+
+        localStorage.setItem('name-value',namevalue);
+        localStorage.setItem('email-value',emailvalue);
+        setTimeout(function()
+        {
+             window.location.href ="home.html";
+        },1000)
+       
+    })
 </script>
 </html>
