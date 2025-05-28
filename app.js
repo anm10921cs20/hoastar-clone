@@ -113,16 +113,16 @@ gallery1.addEventListener('touchend', () => {
 
 gallery2.addEventListener('touchstart', (e) => {
     isDown1 = true;
-    startX1 = e.touches[0].pageX - gallery1.offsetLeft;
-    scrollLeft1 = gallery1.scrollLeft;
+    startX1 = e.touches[0].pageX - gallery2.offsetLeft;
+    scrollLeft1 = gallery2.scrollLeft;
 });
 
 gallery2.addEventListener('touchmove', (e) => {
     if (!isDown1) return;
     e.preventDefault();
-    const x = e.touches[0].pageX - gallery1.offsetLeft;
+    const x = e.touches[0].pageX - gallery2.offsetLeft;
     const walk = (startX1 - x);
-    gallery1.scrollLeft = scrollLeft1 + walk;
+    gallery2.scrollLeft = scrollLeft1 + walk;
 });
 
 gallery2.addEventListener('touchend', () => {

@@ -100,24 +100,19 @@ body {
     }
 
     .first-container {
-        width: 95%;
-        display: flex;
-        flex-direction: row;
-        column-gap: 20px;
-        margin: 0px auto;
+        width: 100%;
+        height: 500px;
         background: #16181f;
         border-radius: 7px;
     }
 
     .second-container {
-        width: 90%;
-        padding: 20px;
-        margin: auto auto;
+        width: 100%;
     }
 
     .blur {
-        border-left: 1px solid rgba(22, 24, 31, 0.2);
-        border-radius: 12px;
+        width: 100%;
+        height: auto;
     }
 
     .top-button {
@@ -128,10 +123,10 @@ body {
     /* content top button */
     .content-top {
         display: flex;
-        column-gap: 20px;
         justify-content: center;
         align-items: center;
-        height: 150px;
+        
+       
     }
 
 
@@ -156,11 +151,11 @@ body {
     }
 
     .ad-btn>h4 {
-        
+        align-self: flex-start;
     }
 
     .container-add-details {
-        
+        text-align: center;
     }
 
     .btn-install {
@@ -171,11 +166,17 @@ body {
     .install {
         background-color: #252833;
         color: #e1e6f0;
-        padding: 15px 70px;
         border-radius: 9px;
+        padding: 10px;
+        width: 50%;
+        margin-top: 10px;
+        margin: 10px auto;
         text-decoration: none;
         font-size: 18px;
         font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: end;
     }
 
     /* secondary modules */
@@ -183,6 +184,11 @@ body {
     .img-background {
         height: 100px;
         text-align: center;
+    }
+    .headings
+    {
+        width: 84%;
+        margin: auto;
     }
     .see-all
     {
@@ -204,59 +210,27 @@ body {
         transition: transform 1s ease-in-out;
     }
     .button-ctrl {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        position: relative;
+        display: none;
     }
 
     .button-arrow1 {
-        position: absolute;
-        top: 0;
-        left: -1px;
-        font-size: 2rem;
-        background-color: transparent;
-        border: transparent;
-        color: #fff;
-        z-index:100;
-        /* From https://css.glass */
-        background: rgba(255, 255, 255, 0.14);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(2.8px);
-        -webkit-backdrop-filter: blur(2.8px);
-        padding: 93px 5px;
+       display: none;
     }
 
     .button-arrow2 {
-        position: absolute;
-        right: 0;
-        top: 0;
-        font-size: 2rem;
-        padding: 93px 5px;
-        background-color: transparent;
-        border: transparent;
-        /* From https://css.glass */
-        background: rgba(255, 255, 255, 0.14);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(2.8px);
-        -webkit-backdrop-filter: blur(2.8px);
-        color: #fff;
-        z-index:100;
+        display: none;
 
     }
 
-    .container2025 {
-        width: 100%;
-    }
+    
 
     .box1 {
         display: flex;
         column-gap: 12px;
-        overflow-x: auto;
+        overflow-x: scroll;
         overflow: hidden;
         scroll-behavior: smooth;    
         width: 100%;
-        margin: auto;
         transition: all 2s ease-in-out;
         
     }
@@ -264,108 +238,53 @@ body {
 
     .box1>a>img {
         border-radius: 5px;
+        height: 170px;
+        width: 130px;
     }
 
     /* BOX 2 container */
 
     .button-ctrl1 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        position: relative;
+        display: none;
     }
 
     .button-arrow3 {
-        position: absolute;
-        top: 0;
-        left: -1px;
-        font-size: 2rem;
-        background-color: transparent;
-        border: transparent;
-        color: #fff;
-        z-index:100;
-        /* From https://css.glass */
-        background: rgba(255, 255, 255, 0.14);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(2.8px);
-        -webkit-backdrop-filter: blur(2.8px);
-        padding: 93px 5px;
+       display: none;
     }
 
     .button-arrow4 {
-       position: absolute;
-        right: 0;
-        top: 0;
-        font-size: 2rem;
-        padding: 93px 5px;
-        background-color: transparent;
-        border: transparent;
-        /* From https://css.glass */
-        background: rgba(255, 255, 255, 0.14);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(2.8px);
-        -webkit-backdrop-filter: blur(2.8px);
-        color: #fff;
-        z-index:100;
+       display: none;
     }
    
 
     .box2 {
-        display: flex;
+         display: flex;
         column-gap: 12px;
         overflow-x: scroll;
         overflow: hidden;
-        scroll-behavior: smooth;
+        scroll-behavior: smooth;    
         width: 100%;
-        margin: auto;
         transition: all 2s ease-in-out;
     }
 
     .box2>a>img {
         border-radius: 5px;
+        height: 170px;
+        width: 130px;
     }
 
     /* BOX 3 container */
 
     .button-ctrl2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        position: relative;
+       display: none;
     }
 
     .button-arrow5 {
-         position: absolute;
-        top: 0;
-        left: -1px;
-        font-size: 2rem;
-        background-color: transparent;
-        border: transparent;
-        color: #fff;
-        z-index:100;
-        /* From https://css.glass */
-        background: rgba(255, 255, 255, 0.14);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(2.8px);
-        -webkit-backdrop-filter: blur(2.8px);
-        padding: 93px 5px;
+         display: none;
     }
 
     .button-arrow6 {
-       position: absolute;
-        right: 0;
-        top: 0;
-        font-size: 2rem;
-        padding: 93px 5px;
-        background-color: transparent;
-        border: transparent;
-        /* From https://css.glass */
-        background: rgba(255, 255, 255, 0.14);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(2.8px);
-        -webkit-backdrop-filter: blur(2.8px);
-        color: #fff;
-        z-index:100;
+     display: none;
     }
    
     
@@ -377,55 +296,28 @@ body {
         overflow: hidden;
         scroll-behavior: smooth;
         width: 100%;
-        margin: auto;
         transition: all 2s ease-in-out;
     }
 
     .box3>a>img {
         border-radius: 5px;
+         height: 170px;
+        width: 130px;
     }
 
     /* BOX 4 container */
 
     .button-ctrl3 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        position: relative;
+        display: none;
     }
 
     .button-arrow7 {
-        position: absolute;
-        top: 0;
-        left: -1px;
-        font-size: 2rem;
-        background-color: transparent;
-        border: transparent;
-        color: #fff;
-        z-index:100;
-        /* From https://css.glass */
-        background: rgba(255, 255, 255, 0.14);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(2.8px);
-        -webkit-backdrop-filter: blur(2.8px);
-        padding: 93px 5px;
+        
+        display: none;
     }
 
     .button-arrow8 {
-       position: absolute;
-        right: 0;
-        top: 0;
-        font-size: 2rem;
-        padding: 93px 5px;
-        background-color: transparent;
-        border: transparent;
-        /* From https://css.glass */
-        background: rgba(255, 255, 255, 0.14);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(2.8px);
-        -webkit-backdrop-filter: blur(2.8px);
-        color: #fff;
-        z-index:100;
+      display: none;
     }
     
 
@@ -442,6 +334,8 @@ body {
 
     .box4>a>img {
         border-radius: 5px;
+        height: 170px;
+        width: 130px;
     }
 }
 
