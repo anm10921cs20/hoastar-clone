@@ -133,16 +133,16 @@ gallery2.addEventListener('touchend', () => {
 
 gallery3.addEventListener('touchstart', (e) => {
     isDown1 = true;
-    startX1 = e.touches[0].pageX - gallery1.offsetLeft;
-    scrollLeft1 = gallery1.scrollLeft;
+    startX1 = e.touches[0].pageX - gallery3.offsetLeft;
+    scrollLeft1 = gallery3.scrollLeft;
 });
 
 gallery3.addEventListener('touchmove', (e) => {
     if (!isDown1) return;
     e.preventDefault();
-    const x = e.touches[0].pageX - gallery1.offsetLeft;
+    const x = e.touches[0].pageX - gallery3.offsetLeft;
     const walk = (startX1 - x);
-    gallery1.scrollLeft = scrollLeft1 + walk;
+    gallery3.scrollLeft = scrollLeft1 + walk;
 });
 
 gallery3.addEventListener('touchend', () => {
@@ -153,16 +153,16 @@ gallery3.addEventListener('touchend', () => {
 
 gallery4.addEventListener('touchstart', (e) => {
     isDown1 = true;
-    startX1 = e.touches[0].pageX - gallery1.offsetLeft;
-    scrollLeft1 = gallery1.scrollLeft;
+    startX1 = e.touches[0].pageX - gallery4.offsetLeft;
+    scrollLeft1 = gallery4.scrollLeft;
 });
 
 gallery4.addEventListener('touchmove', (e) => {
     if (!isDown1) return;
     e.preventDefault();
-    const x = e.touches[0].pageX - gallery1.offsetLeft;
+    const x = e.touches[0].pageX - gallery4.offsetLeft;
     const walk = (startX1 - x);
-    gallery1.scrollLeft = scrollLeft1 + walk;
+    gallery4.scrollLeft = scrollLeft1 + walk;
 });
 
 gallery4.addEventListener('touchend', () => {
