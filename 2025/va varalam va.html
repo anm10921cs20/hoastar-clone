@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="theme-color" content="#ff4343">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanangaan_</title>
+    <title>Va_Varalam_Va_</title>
 
     <!--added logo images-->
 
@@ -104,26 +104,27 @@
                         <h4 class="text-light text-center">Movie Description</h4>
                     </div>
                     <br><br><br>
-                    <h1 class="text-white p-4 text-center"> Vanangaan (2025)</h1>
+                    <h1 class="text-white p-4 text-center"> Va Varalam Va (2025)</h1>
                     <br>
                     <!--img contianer-->
                     <div class="img-container">
-                        <img src="https://m.media-amazon.com/images/M/MV5BMGM1MDRmNTEtZWVmNS00MDg2LWIwYTctYTk0NjExNTRlZmQxXkEyXkFqcGc@._V1_FMjpg_UX538_.jpg"
-                            alt="img" class="img-fluid movie-img" width="40%" height="300px">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMjcyM2UxZDgtYjFmZS00NTIzLWE2NzEtZDFhOThkZDQwYTBmXkEyXkFqcGc@._V1_FMjpg_UX1024_.jpg "
+                            alt="img" class="img-fluid movie-img" width="40%" height="900px">
                     </div>
                     <br><br>
                     <!--movie details container-->
 
                     <div class="img-container details-container">
                         <ul class="movie-info">
-                            <li><strong>Movie:</strong> <span>Vanangaan (2025)</span></li>
-                            <li><strong>Director:</strong> <span>Bala</span></li>
-                            <li><strong>Starring:</strong> <span>Arun Vijay, Roshni Prakash</span></li>
+                            <li><strong>Movie:</strong> <span>Va Varalam Va (2023)</span></li>
+                            <li><strong>Director:</strong> <span>Suresh Babu R, L.G. Ravichandar</span></li>
+                            <li><strong>Starring:</strong> <span>Balaji Murugadoss, Mahana Sanjeevi, <br>Redin
+                                    Kingsley</span></li>
                             <li><strong>Genres:</strong> <span>Drama</span></li>
                             <li><strong>Quality:</strong> <span>Original HD</span></li>
                             <li><strong>Language:</strong> <span>Tamil</span></li>
-                            <li><strong>Movie Rating:</strong> <span>8.2/10</span></li>
-                            <li><strong>Last Updated:</strong> <span>21 February 2025</span></li>
+                            <li><strong>Movie Rating:</strong> <span>7.4/10</span></li>
+                            <li><strong>Last Updated:</strong> <span>28 February 2025</span></li>
                         </ul>
                     </div><br>
                     <!--download container-->
@@ -137,8 +138,7 @@
                                 360p</a></button>
                         <button onclick="btn2()"> <a class="a-download"><i class="fas fa-download "></i>
                                 720p</a></button>
-                        <button onclick="btn3()"> <a class="a-download"><i class="fas fa-download "></i>
-                                1080p</a></button>
+
                         <br><br>
                         <div class="javascript-alert">
                             <p class="text-success text-center" id="message-para"></p><span id="time"></span>
@@ -148,10 +148,7 @@
                             <h4 class="text-light text-start">Page Tags</h4>
                         </div>
                         <br>
-                        <p class="text-light text-start">Vanangaan 2025 Tamil Movie Download, Vanangaan Full Movie
-                            Download MahanMovies. Vanangaan Movie HD Download, Vanangaan (2025) Movie MahanMovies.
-                            Vanangaan (2025) MahanMovies, Vanangaan (2025) Movie 1080p HD Download. Download Vanangaan
-                            Movie 720p Download.</p>
+                        <p class="text-light text-start">Download MahanMovies - Va Varalam Va 2023 Original 720p HD</p>
                         <br>
                         <p class=" text-conect ">Contact Us </p>
                         <div class="nav-social">
@@ -216,7 +213,7 @@
                     time.style.display = "none";
                     message.innerText = "Downloading Started...";
                     setTimeout(() => {
-                        window.location.href = "https://s09.hotshare.link/Vanangaan_2025_Original_360p_HD.mp4.mp4"
+                        window.location.href = "https://dl9.hotshare.click/Va_Varalam_Va_2023_Original_360p_HD.mp4"
                     }, 1000)
                     message.timeout = setTimeout(() => {
                         message.innerHTML = "";
@@ -246,7 +243,7 @@
                     clearInterval(interval);
                     message.innerText = "Downloading Started...";
                     setTimeout(() => {
-                        window.location.href = "https://s09.hotshare.link/Moviesda.Mobi_-_Vanangaan_2025_Original_720p_HD.mp4"
+                        window.location.href = "https://dl7.hotshare.click/Moviesda.Mobi_-_Va_Varalam_Va_2023_Original_720p_HD.mp4"
                     }, 1000)
                     message.timeout = setTimeout(() => {
                         message.textContent = "";
@@ -263,37 +260,7 @@
 
     }
 
-    //function 3
 
-    function btn3() {
-
-        function countdown3() {
-            const time = document.querySelector('#time');
-            const message = document.getElementById('message-para');
-            var counter = 6;
-            const interval = setInterval(() => {
-                counter--;
-                if (counter <= 0) {
-                    time.style.display = "none";
-                    clearInterval(interval);
-                    message.innerText = "Downloading Started...";
-                    setTimeout(() => {
-                        window.location.href = "https://s05.hotshare.link/Vanangaan_2025_Original_1080p_HD.mp4"
-                    }, 1000)
-                    message.timeout = setTimeout(() => {
-                        message.textContent = "";
-                    }, 3000);
-                }
-                else {
-                    time.style.display = "block";
-                    time.innerText = "Please Wait For Downloading " + counter + "s";
-                    time.style.color = "#ff4343";
-                }
-            }, 1000);
-        }
-        countdown3();
-
-    }
 
     const username = document.getElementById('username');
     const names = localStorage.getItem('name-value');
