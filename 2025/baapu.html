@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="theme-color" content="#ff4343">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thudarum_</title>
+    <title>Baapu_</title>
 
     <!--added logo images-->
 
@@ -104,11 +104,11 @@
                         <h4 class="text-light text-center">Movie Description</h4>
                     </div>
                     <br><br><br>
-                    <h1 class="text-white p-4 text-center">Thudarum (2025)</h1>
+                    <h1 class="text-white p-4 text-center">Baapu a Father Story (2025)</h1>
                     <br>
                     <!--img contianer-->
                     <div class="img-container">
-                        <img src="https://m.media-amazon.com/images/M/MV5BNjgyZTA2ZjMtMzkzYy00NmIzLTljYzctMjMxYTMxYzUwNmI0XkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg"
+                        <img src="https://m.media-amazon.com/images/M/MV5BYjFjMDI3ZDYtMTNiOS00NzJmLWIyZmYtZjY2MGE1NGFlMTgwXkEyXkFqcGc@._V1_FMjpg_UY2048_.jpg"
                             alt="img" class="img-fluid movie-img" width="40%" height="300px">
                     </div>
                     <br><br>
@@ -116,14 +116,14 @@
 
                     <div class="img-container details-container">
                         <ul class="movie-info">
-                            <li><strong>Movie:</strong> <span>Thudarum (2025)</span></li>
-                            <li><strong>Director:</strong> <span>Tharun Moorthy</span></li>
-                            <li><strong>Starring:</strong> <span>Mohanlal, Vijay Sethupathi, Bharathiraja</span></li>
-                            <li><strong>Genres:</strong> <span>Drama, Family, Thriller</span></li>
+                            <li><strong>Movie:</strong> <span>Baapu A Fathers Story (2025)</span></li>
+                            <li><strong>Director:</strong> <span>K Dayakar Reddy</span></li>
+                            <li><strong>Starring:</strong> <span>Brahmaji, Sudhakar Reddy Kethiri</span></li>
+                            <li><strong>Genres:</strong> <span>Comedy, Drama</span></li>
                             <li><strong>Quality:</strong> <span>Original HD</span></li>
                             <li><strong>Language:</strong> <span>Tamil</span></li>
-                            <li><strong>Movie Rating:</strong> <span>8.1/10</span></li>
-                            <li><strong>Last Updated:</strong> <span>30 May 2025</span></li>
+                            <li><strong>Movie Rating:</strong> <span>8.3/10</span></li>
+                            <li><strong>Last Updated:</strong> <span>07 March 2025</span></li>
                         </ul>
                     </div><br>
                     <!--download container-->
@@ -137,8 +137,6 @@
                                 360p</a></button>
                         <button onclick="btn2()"> <a class="a-download"><i class="fas fa-download "></i>
                                 720p</a></button>
-                        <button onclick="btn3()"> <a class="a-download"><i class="fas fa-download "></i>
-                                1080p</a></button>
                         <br><br>
                         <div class="javascript-alert">
                             <p class="text-success text-center" id="message-para"></p><span id="time"></span>
@@ -148,7 +146,7 @@
                             <h4 class="text-light text-start">Page Tags</h4>
                         </div>
                         <br>
-                        <p class="text-light text-start">Thudarum 2025 Tamil Movie Download</p>
+                        <p class="text-light text-start">Baapu 2025 Tamil Movie Download</p>
                         <br>
                         <p class=" text-conect ">Contact Us </p>
                         <div class="nav-social">
@@ -213,7 +211,7 @@
                     time.style.display = "none";
                     message.innerText = "Downloading Started...";
                     setTimeout(() => {
-                        window.location.href = "https://s03.hotshare.link/Thudarum_2025_Original_360p_HD.mp4"
+                        window.location.href = "https://s04.hotshare.link/Baapu_A_Fathers_Story_2025_Original_360p_HD.mp4"
                     }, 1000)
                     message.timeout = setTimeout(() => {
                         message.innerHTML = "";
@@ -243,7 +241,7 @@
                     clearInterval(interval);
                     message.innerText = "Downloading Started...";
                     setTimeout(() => {
-                        window.location.href = "https://s02.hotshare.link/Thudarum_2025_Original_720p_HD.mp4"
+                        window.location.href = "https://s10.hotshare.link/Baapu_A_Fathers_Story_2025_Original_720p_HD.mp4"
                     }, 1000)
                     message.timeout = setTimeout(() => {
                         message.textContent = "";
@@ -257,38 +255,6 @@
             }, 1000);
         }
         countdown2();
-
-    }
-
-    //function 3
-
-    function btn3() {
-
-        function countdown3() {
-            const time = document.querySelector('#time');
-            const message = document.getElementById('message-para');
-            var counter = 6;
-            const interval = setInterval(() => {
-                counter--;
-                if (counter <= 0) {
-                    time.style.display = "none";
-                    clearInterval(interval);
-                    message.innerText = "Downloading Started...";
-                    setTimeout(() => {
-                        window.location.href = "https://s08.hotshare.link/Thudarum_2025_Original_1080p_HD.mp4"
-                    }, 1000)
-                    message.timeout = setTimeout(() => {
-                        message.textContent = "";
-                    }, 3000);
-                }
-                else {
-                    time.style.display = "block";
-                    time.innerText = "Please Wait For Downloading " + counter + "s";
-                    time.style.color = "#ff4343";
-                }
-            }, 1000);
-        }
-        countdown3();
 
     }
 

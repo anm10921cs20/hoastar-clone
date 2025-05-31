@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please Internet On</title>
+
+    <style>
+        body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 97.5vh;
+            background-color: #ff4343;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+        .btn
+        {
+            background-color: #fff;
+            border: #fff 1px solid ;
+            padding: 10px 25px;
+            border-radius: 12px;
+            box-shadow: -2px -2px 10px #fff,
+            2px 2px 10px #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Internet oops</h1>
+    <br>
+    <marquee behaviour="scroll" direction="left"><p>Please Swithch Mobile Data or Put on Airplane Mode</p></marquee>
+    <br>
+    <p>Thank You</p><br>
+    <p>by Mahan Movies</p>
+    <br>
+    <button class="btn" onclick="window.location.reload();">Refresh</button>
+</body>
+<script>
+    function update()
+    {
+        var num = 0;
+         var body = document.body;
+         for(let i =0; i<6; i++)
+         {
+            num+=Math.floor(Math.random()*42234);
+            body.style.backgroundColor = "#"+num;
+         }
+    }
+    update();
+    
+   
+    
+</script>
+</html>
