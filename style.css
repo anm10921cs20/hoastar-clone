@@ -405,7 +405,7 @@ body {
     }
 
     .alert-box {
-        width: 90%;
+        width: 80%;
         height: 500px;
         /* From https://css.glass */
         background: rgba(255, 255, 255, 0.28);
@@ -435,7 +435,7 @@ body {
 
     .button {
         position: absolute;
-        transform: translate(320px, 3px);
+        transform: translate(280px,0);
         font-size: 2rem;
         background-color: transparent;
         border: none;
