@@ -79,29 +79,28 @@
                             <button class="button" onclick="alertclose()"><i class="fas fa-close"></i></button>
                             <br>
                             <div class="register">
-                                <form>
+                                <form id="form">
                                     <br>
                                     <h2 class="h4 text-center">User Register</h2>
                                     <br>
-                                    <div class="mb-3">
-                                        <label for="" class="form-label">Name</label>
-                                        <input type="text" class="form-control" name="name" id="user-name"
-                                            placeholder="User Name" />
 
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="" class="form-label">Email</label>
-                                        <input type="text" class="form-control" name="name" id="user-name"
-                                            placeholder="Email Address" /><br>
-                                        <div class="mb-3">
-                                            <label for="message" class="form-label">Message</label><br>
-                                            <textarea class="form-control" placeholder="Message"></textarea>
-                                        </div>
-                                    </div>
-                                    <button class="btn btn-danger buttons">Register</button>
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" name="name" id="user-name"
+                                        placeholder="User Name" /><br>
+
+
+
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" name="name" id="user-email"
+                                        placeholder="Email Address" /><br>
+
+                                    <label>Message</label><br>
+                                    <textarea class="form-control" placeholder="Message"></textarea>
+
+                                    <button id="submit" class="btn btn-danger buttons">Register</button>
                                 </form>
                             </div>
-                            
+
                         </div>
                         <!--logo bar flex content-->
                         <div class="logo-img logo-corner">
@@ -2512,6 +2511,27 @@
     function alertclose() {
         document.getElementById('alert-box').style.display = "none";
     }
+
+
+
+    const button = document.getElementById('form');
+    button.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const names = document.getElementById('user-name');
+        const email = document.getElementById('user-email');
+        const namevalue = names.value;
+        const emailvalue = email.value;
+        localStorage.setItem('name-value', namevalue);
+        localStorage.setItem('user-email', emailvalue);
+        setTimeout(function (events) {
+            window.location.href = "home.html";
+        }, 1000);
+
+
+    });
+
+
 
 </script>
 

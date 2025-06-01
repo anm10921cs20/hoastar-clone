@@ -2401,5 +2401,14 @@
 </body>
 <script src="app.js"></script>
 <script src="bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
+<script>
+        //login page
+const names = localStorage.getItem('name-value');
+        const email = localStorage.getItem('user-email');
+        const loginname = document.getElementById('valueh');
+        loginname.style.color = "#ff4343";  
+        loginname.innerText = names;
+
+</script>
 
 </html>

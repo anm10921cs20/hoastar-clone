@@ -78,6 +78,7 @@ btnrght4.addEventListener('click',()=>
     gallery4.scrollLeft += 190;
 })
 
+
 //mobile scroll
 
 let startX1 = 0;
