@@ -80,6 +80,8 @@ body {
     .logo-menu {
         display: flex;
         justify-content: space-between;
+        height: 60px;
+        align-items: center;
         padding: 10px;
     }
     .logo-corner
@@ -470,6 +472,8 @@ body {
     .logo-menu {
         display: flex;
         justify-content: space-between;
+        height: 60px;
+        align-items: center;
         padding: 10px;
     }
     .logo-corner
