@@ -728,57 +728,66 @@ body {
         display: none;
     }
 
-    .nav-bar {
+   .nav-bar {
         background: rgb(15, 16, 20);
         width: 100%;
-        z-index: 100;
-        height: 70px;
-        position: fixed;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        z-index: 100;
+        height: 79px;
+        position: fixed;
         bottom: 0;
         left: 0;
     }
-    .user-icon
-    {
-        color: #fff;
-        font-size: 2rem;
-        width: 100%;
-        padding:12px 10px 20px;
-        display: flex;
-        justify-content: center;
-        align-self: start;
-        visibility: hidden;
+
+    .user-icon {
+        margin-bottom: 15px;
+        margin-left: 18px;
+        font-size: 1rem;
     }
-    .name
-    {
+
+    .nav-header {
         display: none;
     }
 
-    .nav-menu
-    {
-        display: flex;
-        list-style-type: none;
-    }
-    .nav-menu>li
-    {
-        margin: 0 20px;
-    }
-    .nav-menu>li>a
-    {
-        color: #fff;
-        text-decoration: none;
-    }
-    .space
-    {
-        padding: 0 10px;
+    .name>h5 {
+        font-size: 14px;
+        margin-left: 12px;
+        text-transform: capitalize;
+        visibility: hidden;
     }
 
-    .img-logo-nav
-    {
-        visibility: hidden;
-        width: 100px;
+    .name>h5>p {
+        color: #ff4343;
+    }
+
+    .space {
+        padding: 0 12px;
+    }
+
+    .space1 {
+        padding: 0;
+    }
+
+
+
+    .nav-menu {
+        list-style: none;
+        padding: 15px;
+        display: flex;
+    }
+
+    .nav-menu>li>a {
+        color: #fff;
+        text-decoration: none;
+
+
+    }
+
+    .nav-menu>li {
+        margin: 0 12px;
+        padding: 10px 40px;
+        color: #fff;
+
     }
     
 
