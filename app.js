@@ -78,13 +78,6 @@ btnrght4.addEventListener('click',()=>
     gallery4.scrollLeft += 190;
 })
 
-//login page
-const names = localStorage.getItem('name-value');
-        const email = localStorage.getItem('email-value');
-        const loginname = document.getElementById('valueh');
-        loginname.style.color = "#ff4343";  
-        loginname.innerText = names;
-
 //mobile scroll
 
 let startX1 = 0;

@@ -84,9 +84,9 @@ body {
         align-items: center;
         padding: 10px;
     }
-    .logo-corner
-    {
-        z-index:1;
+
+    .logo-corner {
+        z-index: 1;
     }
 
     .user-icon {
@@ -112,8 +112,8 @@ body {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .cheveron-color
-    {
+
+    .cheveron-color {
         color: #b43333;
         font-size: 30px;
     }
@@ -401,7 +401,47 @@ body {
 @media only screen and (min-width:400px) and (max-width:767px) {
     body::-webkit-scrollbar {
         display: none;
+
     }
+
+    .alert-box {
+        width: 90%;
+        height: 500px;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.28);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.4px);
+        -webkit-backdrop-filter: blur(6.4px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 24px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        display: none;
+
+    }
+
+    .register {
+        width: 70%;
+        margin: auto;
+    }
+
+    .buttons {
+        width: 40%;
+        transform: translate(70px, 10px);
+    }
+
+    .button {
+        position: absolute;
+        transform: translate(320px, 3px);
+        font-size: 2rem;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+    }
+
 
     .nav-bar {
         background: rgb(15, 16, 20);
@@ -473,9 +513,9 @@ body {
         align-items: center;
         padding: 10px;
     }
-    .logo-corner
-    {
-        z-index:1;
+
+    .logo-corner {
+        z-index: 1;
     }
 
     .user-icon {
@@ -501,8 +541,8 @@ body {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-     .cheveron-color
-    {
+
+    .cheveron-color {
         color: #b43333;
         font-size: 30px;
     }
@@ -526,7 +566,9 @@ body {
         top: 0;
         right: 0;
         overflow-y: scroll;
+
     }
+
 
     .container-content::-webkit-scrollbar {
         display: none;
@@ -786,7 +828,7 @@ body {
 
     }
 
-    
+
     /* logo main container details */
     .logo-nav {
         position: sticky;
@@ -800,9 +842,9 @@ body {
         justify-content: space-between;
         padding: 10px;
     }
-    .logo-corner
-    {
-        z-index:1;
+
+    .logo-corner {
+        z-index: 1;
     }
 
     .user-icon {
@@ -828,8 +870,8 @@ body {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-     .cheveron-color
-    {
+
+    .cheveron-color {
         color: #b43333;
         font-size: 30px;
     }
@@ -1192,7 +1234,7 @@ body {
         background-color: rgb(61, 59, 59);
         border-radius: 5px;
     }
-    
+
     /* logo main container details */
     .logo-nav {
         display: none;
@@ -1202,11 +1244,11 @@ body {
         display: flex;
         justify-content: space-between;
         padding: 10px;
-        
+
     }
-    .logo-corner
-    {
-        z-index:1;
+
+    .logo-corner {
+        z-index: 1;
     }
 
     .user-icon {
@@ -1233,13 +1275,13 @@ body {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-     .cheveron-color
-    {
+
+    .cheveron-color {
         color: #b43333;
         font-size: 30px;
     }
-    .carousel-caption.crousel-division
-    {
+
+    .carousel-caption.crousel-division {
         height: 20px;
     }
 
@@ -1435,7 +1477,7 @@ body {
 
     }
 
-   
+
 
 
     .box1>a>img {
@@ -1543,6 +1585,7 @@ body {
         color: #fff;
         z-index: 100;
     }
+
     .box3 {
         display: flex;
         column-gap: 12px;
@@ -1721,7 +1764,8 @@ body {
         background-color: rgb(61, 59, 59);
         border-radius: 5px;
     }
-     /* logo main container details */
+
+    /* logo main container details */
     .logo-nav {
         display: none;
     }
@@ -1730,11 +1774,11 @@ body {
         display: flex;
         justify-content: space-between;
         padding: 10px;
-        
+
     }
-    .logo-corner
-    {
-        z-index:1;
+
+    .logo-corner {
+        z-index: 1;
     }
 
     .user-icon {
@@ -1761,8 +1805,8 @@ body {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-     .cheveron-color
-    {
+
+    .cheveron-color {
         color: #b43333;
         font-size: 30px;
     }
@@ -1959,7 +2003,7 @@ body {
 
     }
 
-   
+
 
 
     .box1>a>img {
@@ -2009,7 +2053,7 @@ body {
         z-index: 100;
     }
 
-  
+
 
     .box2 {
         display: flex;
@@ -2069,7 +2113,7 @@ body {
         z-index: 100;
     }
 
-    
+
 
     .box3 {
         display: flex;
