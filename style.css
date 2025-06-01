@@ -463,9 +463,6 @@ body {
 
     /* logo main container details */
     .logo-nav {
-        position: sticky;
-        scroll-behavior: smooth;
-        top: 0;
         background-color: rgb(15, 16, 20);
     }
 
