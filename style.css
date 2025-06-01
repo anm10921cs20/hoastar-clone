@@ -197,13 +197,13 @@ body {
     }
     .right-arrow
     {
-        transition: transform 1s ease-in-out;
+        transition: transform 0.4s ease-in-out;
     }
     .see-all:hover .right-arrow
     {
         color: #ff4343;
         transform: translateX(30px);
-        transition: transform 1s ease-in-out;
+        transition: transform 0.4s ease-in-out;
     }
     .button-ctrl {
         display: none;
@@ -545,13 +545,13 @@ body {
     }
     .right-arrow
     {
-        transition: transform 1s ease-in-out;
+        transition: transform 0.4s ease-in-out;
     }
     .see-all:hover .right-arrow
     {
         color: #ff4343;
         transform: translateX(30px);
-        transition: transform 1s ease-in-out;
+        transition: transform 0.4s ease-in-out;
     }
     .button-ctrl {
         display: none;
