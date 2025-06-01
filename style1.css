@@ -1,0 +1,2148 @@
+body {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(0deg, rgb(41, 39, 39), rgb(37, 36, 36));
+}
+
+
+/* for mobile screen  sm */
+@media only screen and (min-width:100px) and (max-width:399px) {
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-bar {
+        background: rgb(15, 16, 20);
+        width: 100%;
+        display: flex;
+        padding: 3px 0;
+        z-index: 100;
+        height: 80px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+
+    .user-icon {
+        margin-bottom: 15px;
+        margin-left: 18px;
+        font-size: 1rem;
+    }
+
+    .nav-header {
+        display: none;
+    }
+
+    .name>h5 {
+        font-size: 14px;
+        margin-left: 12px;
+        text-transform: capitalize;
+        visibility: hidden;
+    }
+
+    .name>h5>p {
+        color: #ff4343;
+    }
+
+    .space {
+        padding: 0 12px;
+    }
+
+    .space1 {
+        padding: 0;
+    }
+
+
+
+    .nav-menu {
+        list-style: none;
+        padding: 10px;
+        display: flex;
+    }
+
+    .nav-menu>li>a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .nav-menu>li {
+        margin: 0 11px;
+    }
+
+    /* logo main container details */
+    .logo-nav {
+        position: sticky;
+        scroll-behavior: smooth;
+        top: 0;
+        background-color: rgb(15, 16, 20);
+    }
+
+    .logo-menu {
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        align-items: center;
+        padding: 10px;
+    }
+    .logo-corner
+    {
+        z-index:1;
+    }
+
+    .user-icon {
+        font-size: 2rem;
+        background-color: transparent;
+    }
+
+    .user-icon-class {
+        color: #fff;
+        padding: 8px;
+        transform: translateY(-6px);
+    }
+
+    .img-size {
+        width: 100%;
+        height: 500px;
+        filter: brightness(70%);
+    }
+
+    .logo-h1 {
+        background: -webkit-linear-gradient(#eee, #333);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .cheveron-color
+    {
+        color: #b43333;
+        font-size: 30px;
+    }
+
+
+
+
+    /* nav logo bar */
+
+    .img-logo-nav {
+        display: none;
+    }
+
+    .main-content {
+        background: rgb(15, 16, 20);
+        flex-direction: column;
+        height: 800px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        overflow-y: scroll;
+    }
+
+    .container-content::-webkit-scrollbar {
+        display: none;
+    }
+
+    .first-container {
+        width: 100%;
+        height: 600px;
+        background: #16181f;
+        border-radius: 7px;
+    }
+
+    .second-container {
+        width: 100%;
+    }
+
+    .blur {
+        width: 100%;
+        height: auto;
+    }
+
+    .top-button {
+        max-width: 48px;
+        overflow: hidden;
+    }
+
+    /* content top button */
+    .content-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+
+
+    /* add button */
+
+    .ad-btn>h3 {
+        background-color: #ffcc75;
+        font-size: 0.7rem;
+        padding: 3px;
+        width: 20px;
+        margin-top: 14px;
+        color: rgb(56, 51, 51);
+        position: relative;
+    }
+
+    .ad-btn>p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #8f98b2;
+    }
+
+    .ad-btn>h4 {
+        align-self: flex-start;
+    }
+
+    .container-add-details {
+        text-align: center;
+    }
+
+    .btn-install {}
+
+    .install {
+        background-color: #252833;
+        color: #e1e6f0;
+        border-radius: 9px;
+        padding: 10px;
+        width: 50%;
+        margin-top: 10px;
+        margin: 10px auto;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
+    /* secondary modules */
+
+    .img-background {
+        height: 100px;
+        text-align: center;
+    }
+
+    .headings {
+        width: 84%;
+        margin: auto;
+    }
+
+    .see-all {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .see-all:hover {
+        color: #ff4343;
+    }
+
+    .right-arrow {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .see-all:hover .right-arrow {
+        color: #ff4343;
+        transform: translateX(30px);
+        transition: transform 0.2 ease-in-out;
+    }
+
+    .button-ctrl {
+        display: none;
+    }
+
+    .button-arrow1 {
+        display: none;
+    }
+
+    .button-arrow2 {
+        display: none;
+
+    }
+
+
+
+    .box1 {
+        display: flex;
+        column-gap: 12px;
+        overflow-x: scroll;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        width: 100%;
+        transition: all 2s ease-in-out;
+
+    }
+
+
+    .box1>a>img {
+        border-radius: 5px;
+        height: 170px;
+        width: 130px;
+    }
+
+    /* BOX 2 container */
+
+    .button-ctrl1 {
+        display: none;
+    }
+
+    .button-arrow3 {
+        display: none;
+    }
+
+    .button-arrow4 {
+        display: none;
+    }
+
+
+    .box2 {
+        display: flex;
+        column-gap: 12px;
+        overflow-x: scroll;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        width: 100%;
+        transition: all 2s ease-in-out;
+    }
+
+    .box2>a>img {
+        border-radius: 5px;
+        height: 170px;
+        width: 130px;
+    }
+
+    /* BOX 3 container */
+
+    .button-ctrl2 {
+        display: none;
+    }
+
+    .button-arrow5 {
+        display: none;
+    }
+
+    .button-arrow6 {
+        display: none;
+    }
+
+
+
+    .box3 {
+        display: flex;
+        column-gap: 12px;
+        overflow-x: scroll;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        width: 100%;
+        transition: all 2s ease-in-out;
+    }
+
+    .box3>a>img {
+        border-radius: 5px;
+        height: 170px;
+        width: 130px;
+    }
+
+    /* BOX 4 container */
+
+    .button-ctrl3 {
+        display: none;
+    }
+
+    .button-arrow7 {
+
+        display: none;
+    }
+
+    .button-arrow8 {
+        display: none;
+    }
+
+
+    .box4 {
+        display: flex;
+        column-gap: 12px;
+        overflow-x: scroll;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        width: 100%;
+        margin: auto;
+        transition: all 2s ease-in-out;
+    }
+
+    .box4>a>img {
+        border-radius: 5px;
+        height: 170px;
+        width: 130px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for mobile screen lg */
+
+@media only screen and (min-width:400px) and (max-width:767px) {
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-bar {
+        background: rgb(15, 16, 20);
+        width: 100%;
+        display: flex;
+        z-index: 100;
+        height: 79px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+
+
+
+    .nav-header {
+        display: none;
+    }
+
+    .name>h5 {
+        font-size: 14px;
+        margin-left: 12px;
+        text-transform: capitalize;
+        visibility: hidden;
+    }
+
+    .name>h5>p {
+        color: #ff4343;
+    }
+
+    .space {
+        padding: 0 12px;
+    }
+
+    .space1 {
+        padding: 0;
+    }
+
+
+
+    .nav-menu {
+        list-style: none;
+        padding: 15px;
+        display: flex;
+    }
+
+    .nav-menu>li>a {
+        color: #fff;
+        text-decoration: none;
+
+
+    }
+
+    .nav-menu>li {
+        margin: 0 12px;
+        padding: 10px 0;
+        color: #fff;
+
+    }
+
+    /* logo main container details */
+    .logo-nav {
+        background-color: rgb(15, 16, 20);
+    }
+
+    .logo-menu {
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        align-items: center;
+        padding: 10px;
+    }
+    .logo-corner
+    {
+        z-index:1;
+    }
+
+    .user-icon {
+        font-size: 2rem;
+        background-color: transparent;
+    }
+
+    .user-icon-class {
+        color: #fff;
+        padding: 8px;
+        transform: translateY(-6px);
+    }
+
+    .img-size {
+        width: 100%;
+        height: 500px;
+        filter: brightness(70%);
+    }
+
+    .logo-h1 {
+        background: -webkit-linear-gradient(#eee, #333);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+     .cheveron-color
+    {
+        color: #b43333;
+        font-size: 30px;
+    }
+
+
+
+
+
+    /* nav logo bar */
+
+    .img-logo-nav {
+        display: none;
+    }
+
+    .main-content {
+        background: #16181f;
+        flex-direction: column;
+        height: 1138px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        overflow-y: scroll;
+    }
+
+    .container-content::-webkit-scrollbar {
+        display: none;
+    }
+
+    .first-container {
+        width: 100%;
+        height: 600px;
+        background: #16181f;
+        border-radius: 7px;
+    }
+
+    .second-container {
+        width: 100%;
+    }
+
+    .blur {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+
+
+
+
+    /* secondary modules */
+
+    .img-background {
+        height: 100px;
+        text-align: center;
+    }
+
+    .headings {
+        width: 84%;
+        margin: auto;
+    }
+
+    .see-all {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .see-all:hover {
+        color: #ff4343;
+    }
+
+    .right-arrow {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .see-all:hover .right-arrow {
+        color: #ff4343;
+        transform: translateX(30px);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .button-ctrl {
+        display: none;
+    }
+
+    .button-arrow1 {
+        display: none;
+    }
+
+    .button-arrow2 {
+        display: none;
+
+    }
+
+
+
+    .box1 {
+        display: flex;
+        column-gap: 12px;
+        overflow-x: scroll;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        width: 100%;
+        transition: all 2s ease-in-out;
+
+    }
+
+
+    .box1>a>img {
+        border-radius: 5px;
+        height: 170px;
+        width: 130px;
+    }
+
+    /* BOX 2 container */
+
+    .button-ctrl1 {
+        display: none;
+    }
+
+    .button-arrow3 {
+        display: none;
+    }
+
+    .button-arrow4 {
+        display: none;
+    }
+
+
+    .box2 {
+        display: flex;
+        column-gap: 12px;
+        overflow-x: scroll;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        width: 100%;
+        transition: all 2s ease-in-out;
+    }
+
+    .box2>a>img {
+        border-radius: 5px;
+        height: 170px;
+        width: 130px;
+    }
+
+    /* BOX 3 container */
+
+    .button-ctrl2 {
+        display: none;
+    }
+
+    .button-arrow5 {
+        display: none;
+    }
+
+    .button-arrow6 {
+        display: none;
+    }
+
+
+
+    .box3 {
+        display: flex;
+        column-gap: 12px;
+        overflow-x: scroll;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        width: 100%;
+        transition: all 2s ease-in-out;
+    }
+
+    .box3>a>img {
+        border-radius: 5px;
+        height: 170px;
+        width: 130px;
+    }
+
+    /* BOX 4 container */
+
+    .button-ctrl3 {
+        display: none;
+    }
+
+    .button-arrow7 {
+
+        display: none;
+    }
+
+    .button-arrow8 {
+        display: none;
+    }
+
+
+    .box4 {
+        display: flex;
+        column-gap: 12px;
+        overflow-x: scroll;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        width: 100%;
+        margin: auto;
+        transition: all 2s ease-in-out;
+    }
+
+    .box4>a>img {
+        border-radius: 5px;
+        height: 170px;
+        width: 130px;
+    }
+}
+
+
+/* for ipad screen only */
+
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-bar {
+        background: rgb(15, 16, 20);
+        width: 100%;
+        display: flex;
+        z-index: 100;
+        height: 79px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+
+    .user-icon {
+        margin-bottom: 15px;
+        margin-left: 18px;
+        font-size: 1rem;
+    }
+
+    .nav-header {
+        display: none;
+    }
+
+    .name>h5 {
+        font-size: 14px;
+        margin-left: 12px;
+        text-transform: capitalize;
+        visibility: hidden;
+    }
+
+    .name>h5>p {
+        color: #ff4343;
+    }
+
+    .space {
+        padding: 0 12px;
+    }
+
+    .space1 {
+        padding: 0;
+    }
+
+
+
+    .nav-menu {
+        list-style: none;
+        padding: 15px;
+        display: flex;
+    }
+
+    .nav-menu>li>a {
+        color: #fff;
+        text-decoration: none;
+
+
+    }
+
+    .nav-menu>li {
+        margin: 0 12px;
+        padding: 10px 40px;
+        color: #fff;
+
+    }
+
+    
+    /* logo main container details */
+    .logo-nav {
+        position: sticky;
+        scroll-behavior: smooth;
+        top: 0;
+        background-color: rgb(15, 16, 20);
+    }
+
+    .logo-menu {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .logo-corner
+    {
+        z-index:1;
+    }
+
+    .user-icon {
+        font-size: 2rem;
+        background-color: transparent;
+    }
+
+    .user-icon-class {
+        color: #fff;
+        padding: 8px;
+        transform: translateY(-6px);
+    }
+
+    .img-size {
+        width: 100%;
+        height: 800px;
+        filter: brightness(70%);
+    }
+
+    .logo-h1 {
+        background: -webkit-linear-gradient(#eee, #333);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+     .cheveron-color
+    {
+        color: #b43333;
+        font-size: 30px;
+    }
+
+
+
+    /* nav logo bar */
+
+    .img-logo-nav {
+        display: none;
+    }
+
+    .main-content {
+        background: rgb(15, 16, 20);
+        flex-direction: column;
+        height: 1138px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        overflow-y: scroll;
+    }
+
+    .container-content::-webkit-scrollbar {
+        display: none;
+    }
+
+    .first-container {
+        width: 100%;
+        height: 900px;
+        background: #16181f;
+        border-radius: 7px;
+    }
+
+    .second-container {
+        width: 100%;
+    }
+
+    .blur {
+        width: 100%;
+        height: auto;
+    }
+
+    .top-button {
+        max-width: 48px;
+        overflow: hidden;
+    }
+
+    /* content top button */
+    .content-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+
+
+    /* add button */
+
+    .ad-btn>h3 {
+        background-color: #ffcc75;
+        font-size: 0.7rem;
+        padding: 3px;
+        width: 20px;
+        margin-top: 14px;
+        color: rgb(56, 51, 51);
+        position: relative;
+    }
+
+    .ad-btn>p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #8f98b2;
+    }
+
+    .ad-btn>h4 {
+        align-self: flex-start;
+    }
+
+    .container-add-details {
+        text-align: center;
+    }
+
+    .btn-install {}
+
+    .install {
+        background-color: #252833;
+        color: #e1e6f0;
+        border-radius: 9px;
+        padding: 10px;
+        width: 50%;
+        margin-top: 10px;
+        margin: 10px auto;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
+    /* secondary modules */
+
+    .img-background {
+        height: 100px;
+        text-align: center;
+    }
+
+    .headings {
+        width: 84%;
+        margin: auto;
+    }
+
+    .see-all {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .see-all:hover {
+        color: #ff4343;
+    }
+
+    .right-arrow {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .see-all:hover .right-arrow {
+        color: #ff4343;
+        transform: translateX(30px);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .button-ctrl {
+        display: none;
+    }
+
+    .button-arrow1 {
+        display: none;
+    }
+
+    .button-arrow2 {
+        display: none;
+
+    }
+
+
+
+    .box1 {
+        display: flex;
+        column-gap: 12px;
+        overflow-x: scroll;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        width: 100%;
+        transition: all 2s ease-in-out;
+
+    }
+
+
+    .box1>a>img {
+        border-radius: 5px;
+        height: 170px;
+        width: 130px;
+    }
+
+    /* BOX 2 container */
+
+    .button-ctrl1 {
+        display: none;
+    }
+
+    .button-arrow3 {
+        display: none;
+    }
+
+    .button-arrow4 {
+        display: none;
+    }
+
+
+    .box2 {
+        display: flex;
+        column-gap: 12px;
+        overflow-x: scroll;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        width: 100%;
+        transition: all 2s ease-in-out;
+    }
+
+    .box2>a>img {
+        border-radius: 5px;
+        height: 170px;
+        width: 130px;
+    }
+
+    /* BOX 3 container */
+
+    .button-ctrl2 {
+        display: none;
+    }
+
+    .button-arrow5 {
+        display: none;
+    }
+
+    .button-arrow6 {
+        display: none;
+    }
+
+
+
+    .box3 {
+        display: flex;
+        column-gap: 12px;
+        overflow-x: scroll;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        width: 100%;
+        transition: all 2s ease-in-out;
+    }
+
+    .box3>a>img {
+        border-radius: 5px;
+        height: 170px;
+        width: 130px;
+    }
+
+    /* BOX 4 container */
+
+    .button-ctrl3 {
+        display: none;
+    }
+
+    .button-arrow7 {
+
+        display: none;
+    }
+
+    .button-arrow8 {
+        display: none;
+    }
+
+
+    .box4 {
+        display: flex;
+        column-gap: 12px;
+        overflow-x: scroll;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        width: 100%;
+        margin: auto;
+        transition: all 2s ease-in-out;
+    }
+
+    .box4>a>img {
+        border-radius: 5px;
+        height: 170px;
+        width: 130px;
+    }
+}
+
+
+
+
+
+
+/* for laptop screens */
+
+@media only screen and (min-width:1024px) and (max-width:1439px) {
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-bar {
+        background: rgb(15, 16, 20);
+        width: 7%;
+        z-index: 100;
+        height: 1230px;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .user-icon {
+        margin-bottom: 15px;
+        margin-left: 18px;
+        font-size: 1rem;
+    }
+
+    .nav-header {
+        color: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 40px;
+        margin-right: 39px;
+    }
+
+    .name>h5 {
+        font-size: 14px;
+        margin-left: 12px;
+        text-transform: capitalize;
+        visibility: hidden;
+    }
+
+    .name>h5>p {
+        color: #ff4343;
+    }
+
+    .space {
+        padding: 0 12px;
+    }
+
+    .space1 {
+        padding: 0;
+    }
+
+
+
+    .nav-menu {
+        list-style: none;
+        padding: 15px;
+    }
+
+    .nav-menu>li>a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        width: 10%;
+        padding: 10px 0;
+
+
+    }
+
+    .nav-menu>li {
+        margin: 9px 0;
+        padding: 10px 0;
+        color: #fff;
+
+    }
+
+    .nav-bar:hover {
+        width: 15%;
+    }
+
+    .nav-bar:hover .name>h5 {
+        visibility: visible;
+    }
+
+    .nav-bar:hover .nav-menu>li>a {
+        width: 100%;
+    }
+
+    .nav-menu>li>a:hover {
+        background-color: rgb(61, 59, 59);
+        border-radius: 5px;
+    }
+    
+    /* logo main container details */
+    .logo-nav {
+        display: none;
+    }
+
+    .logo-menu {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        
+    }
+    .logo-corner
+    {
+        z-index:1;
+    }
+
+    .user-icon {
+        font-size: 2rem;
+        background-color: transparent;
+    }
+
+    .user-icon-class {
+        color: #fff;
+        padding: 8px;
+        transform: translateY(-6px);
+    }
+
+    .img-size {
+        width: 1000px;
+        height: 900px;
+        margin: auto;
+        filter: brightness(70%);
+    }
+
+    .logo-h1 {
+        background: -webkit-linear-gradient(#eee, #333);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+     .cheveron-color
+    {
+        color: #b43333;
+        font-size: 30px;
+    }
+    .carousel-caption.crousel-division
+    {
+        height: 20px;
+    }
+
+    /* nav logo bar */
+
+    .img-logo-nav {
+        position: absolute;
+        bottom: 300px;
+        left: -20px;
+    }
+
+    .main-content {
+        background: rgb(15, 16, 20);
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        overflow-y: scroll;
+    }
+
+    .container-content::-webkit-scrollbar {
+        display: none;
+    }
+
+    .first-container {
+        width: 95%;
+        margin: 0px auto;
+        background: #16181f;
+        border-radius: 7px;
+    }
+
+    .second-container {
+        width: 90%;
+        padding: 20px;
+        margin: auto auto;
+    }
+
+    .blur {
+        border-left: 1px solid rgba(22, 24, 31, 0.2);
+        border-radius: 12px;
+    }
+
+    .top-button {
+        max-width: 48px;
+        overflow: hidden;
+    }
+
+    /* content top button */
+    .content-top {
+        display: flex;
+        column-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+    }
+
+
+
+    /* add button */
+
+    .ad-btn>h3 {
+        background-color: #ffcc75;
+        font-size: 0.7rem;
+        padding: 3px;
+        width: 20px;
+        margin-top: 14px;
+        color: rgb(56, 51, 51);
+        position: relative;
+    }
+
+    .ad-btn>p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #8f98b2;
+    }
+
+    .ad-btn>h4 {
+        position: absolute;
+        top: 68px;
+        left: 770px;
+    }
+
+    .container-add-details {
+        position: absolute;
+        left: 674px;
+        top: 133px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .btn-install {
+        position: absolute;
+        left: 674px;
+        top: 200px;
+
+    }
+
+    .install {
+        background-color: #252833;
+        color: #e1e6f0;
+        padding: 15px 70px;
+        border-radius: 9px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    /* secondary modules */
+
+    .img-background {
+        height: 100px;
+        text-align: center;
+    }
+
+    .see-all {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .see-all:hover {
+        color: #ff4343;
+    }
+
+    .right-arrow {
+        transition: transform 1s ease-in-out;
+    }
+
+    .see-all:hover .right-arrow {
+        color: #ff4343;
+        transform: translateX(30px);
+        transition: transform 1s ease-in-out;
+    }
+
+    .button-ctrl {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .button-arrow1 {
+        position: absolute;
+        top: 0;
+        left: -1px;
+        font-size: 2rem;
+        background-color: transparent;
+        border: transparent;
+        color: #fff;
+        z-index: 100;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.14);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.8px);
+        -webkit-backdrop-filter: blur(2.8px);
+        padding: 93px 5px;
+    }
+
+    .button-arrow2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 2rem;
+        padding: 93px 5px;
+        background-color: transparent;
+        border: transparent;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.14);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.8px);
+        -webkit-backdrop-filter: blur(2.8px);
+        color: #fff;
+        z-index: 100;
+
+    }
+
+    .container2025 {
+        width: 100%;
+    }
+
+    .box1 {
+        display: flex;
+        column-gap: 12px;
+        overflow-x: scroll;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        width: 100%;
+        margin: auto;
+        transition: all 2s ease-in-out;
+
+    }
+
+   
+
+
+    .box1>a>img {
+        border-radius: 5px;
+    }
+
+    /* BOX 2 container */
+
+    .button-ctrl1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .button-arrow3 {
+        position: absolute;
+        top: 0;
+        left: -1px;
+        font-size: 2rem;
+        background-color: transparent;
+        border: transparent;
+        color: #fff;
+        z-index: 100;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.14);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.8px);
+        -webkit-backdrop-filter: blur(2.8px);
+        padding: 93px 5px;
+    }
+
+    .button-arrow4 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 2rem;
+        padding: 93px 5px;
+        background-color: transparent;
+        border: transparent;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.14);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.8px);
+        -webkit-backdrop-filter: blur(2.8px);
+        color: #fff;
+        z-index: 100;
+    }
+
+
+    .box2 {
+        display: flex;
+        column-gap: 12px;
+        overflow-x: scroll;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        width: 100%;
+        margin: auto;
+        transition: all 2s ease-in-out;
+    }
+
+    .box2>a>img {
+        border-radius: 5px;
+    }
+
+    /* BOX 3 container */
+
+    .button-ctrl2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .button-arrow5 {
+        position: absolute;
+        top: 0;
+        left: -1px;
+        font-size: 2rem;
+        background-color: transparent;
+        border: transparent;
+        color: #fff;
+        z-index: 100;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.14);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.8px);
+        -webkit-backdrop-filter: blur(2.8px);
+        padding: 93px 5px;
+    }
+
+    .button-arrow6 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 2rem;
+        padding: 93px 5px;
+        background-color: transparent;
+        border: transparent;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.14);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.8px);
+        -webkit-backdrop-filter: blur(2.8px);
+        color: #fff;
+        z-index: 100;
+    }
+    .box3 {
+        display: flex;
+        column-gap: 12px;
+        overflow-x: scroll;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        width: 100%;
+        margin: auto;
+        transition: all 2s ease-in-out;
+    }
+
+    .box3>a>img {
+        border-radius: 5px;
+    }
+
+    /* BOX 4 container */
+
+    .button-ctrl3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .button-arrow7 {
+        position: absolute;
+        top: 0;
+        left: -1px;
+        font-size: 2rem;
+        background-color: transparent;
+        border: transparent;
+        color: #fff;
+        z-index: 100;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.14);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.8px);
+        -webkit-backdrop-filter: blur(2.8px);
+        padding: 93px 5px;
+    }
+
+    .button-arrow8 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 2rem;
+        padding: 93px 5px;
+        background-color: transparent;
+        border: transparent;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.14);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.8px);
+        -webkit-backdrop-filter: blur(2.8px);
+        color: #fff;
+        z-index: 100;
+    }
+
+
+    .box4 {
+        display: flex;
+        column-gap: 12px;
+        overflow-x: scroll;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        width: 100%;
+        margin: auto;
+        transition: all 2s ease-in-out;
+    }
+
+    .box4>a>img {
+        border-radius: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* only desktop screens */
+
+@media only screen and (min-width:1440px) and (max-width:2159px) {
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-bar {
+        background: rgb(15, 16, 20);
+        width: 5%;
+        z-index: 100;
+        height: 1230px;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .user-icon {
+        margin-bottom: 15px;
+        margin-left: 18px;
+        font-size: 1rem;
+    }
+
+    .nav-header {
+        color: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 40px;
+        margin-right: 39px;
+    }
+
+    .name>h5 {
+        font-size: 14px;
+        margin-left: 12px;
+        text-transform: capitalize;
+        visibility: hidden;
+    }
+
+    .name>h5>p {
+        color: #ff4343;
+    }
+
+    .space {
+        padding: 0 12px;
+    }
+
+    .space1 {
+        padding: 0;
+    }
+
+
+
+    .nav-menu {
+        list-style: none;
+        padding: 15px;
+    }
+
+    .nav-menu>li>a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        width: 10%;
+        padding: 10px 0;
+
+
+    }
+
+    .nav-menu>li {
+        margin: 9px 0;
+        padding: 10px 0;
+        color: #fff;
+
+    }
+
+    .nav-bar:hover {
+        width: 10%;
+    }
+
+    .nav-bar:hover .name>h5 {
+        visibility: visible;
+    }
+
+    .nav-bar:hover .nav-menu>li>a {
+        width: 100%;
+    }
+
+    .nav-menu>li>a:hover {
+        background-color: rgb(61, 59, 59);
+        border-radius: 5px;
+    }
+     /* logo main container details */
+    .logo-nav {
+        display: none;
+    }
+
+    .logo-menu {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        
+    }
+    .logo-corner
+    {
+        z-index:1;
+    }
+
+    .user-icon {
+        font-size: 2rem;
+        background-color: transparent;
+    }
+
+    .user-icon-class {
+        color: #fff;
+        padding: 8px;
+        transform: translateY(-6px);
+    }
+
+    .img-size {
+        width: 1000px;
+        height: 900px;
+        margin: auto;
+        filter: brightness(70%);
+    }
+
+    .logo-h1 {
+        background: -webkit-linear-gradient(#eee, #333);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+     .cheveron-color
+    {
+        color: #b43333;
+        font-size: 30px;
+    }
+
+    /* nav logo bar */
+
+    .img-logo-nav {
+        position: absolute;
+        bottom: 300px;
+        left: -20px;
+    }
+
+    .main-content {
+        background: rgb(15, 16, 20);
+        display: flex;
+        flex-direction: column;
+        height: 1230px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        overflow-y: scroll;
+    }
+
+    .container-content::-webkit-scrollbar {
+        display: none;
+    }
+
+    .first-container {
+        width: 95%;
+        margin: 0px auto;
+        background: #16181f;
+        border-radius: 7px;
+    }
+
+    .second-container {
+        width: 90%;
+        padding: 20px;
+        margin: auto auto;
+    }
+
+    .blur {
+        border-left: 1px solid rgba(22, 24, 31, 0.2);
+        border-radius: 12px;
+    }
+
+    .top-button {
+        max-width: 48px;
+        overflow: hidden;
+    }
+
+    /* content top button */
+    .content-top {
+        display: flex;
+        column-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+    }
+
+
+
+    /* add button */
+
+    .ad-btn>h3 {
+        background-color: #ffcc75;
+        font-size: 0.7rem;
+        padding: 3px;
+        width: 20px;
+        margin-top: 14px;
+        color: rgb(56, 51, 51);
+        position: relative;
+    }
+
+    .ad-btn>p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #8f98b2;
+    }
+
+    .ad-btn>h4 {
+        position: absolute;
+        top: 68px;
+        left: 770px;
+    }
+
+    .container-add-details {
+        position: absolute;
+        left: 674px;
+        top: 133px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .btn-install {
+        position: absolute;
+        left: 674px;
+        top: 200px;
+
+    }
+
+    .install {
+        background-color: #252833;
+        color: #e1e6f0;
+        padding: 15px 70px;
+        border-radius: 9px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    /* secondary modules */
+
+    .img-background {
+        height: 100px;
+        text-align: center;
+    }
+
+    .see-all {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .see-all:hover {
+        color: #ff4343;
+    }
+
+    .right-arrow {
+        transition: transform 1s ease-in-out;
+    }
+
+    .see-all:hover .right-arrow {
+        color: #ff4343;
+        transform: translateX(30px);
+        transition: transform 1s ease-in-out;
+    }
+
+    .button-ctrl {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .button-arrow1 {
+        position: absolute;
+        top: 0;
+        left: -1px;
+        font-size: 2rem;
+        background-color: transparent;
+        border: transparent;
+        color: #fff;
+        z-index: 100;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.14);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.8px);
+        -webkit-backdrop-filter: blur(2.8px);
+        padding: 93px 5px;
+    }
+
+    .button-arrow2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 2rem;
+        padding: 93px 5px;
+        background-color: transparent;
+        border: transparent;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.14);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.8px);
+        -webkit-backdrop-filter: blur(2.8px);
+        color: #fff;
+        z-index: 100;
+
+    }
+
+    .container2025 {
+        width: 100%;
+    }
+
+    .box1 {
+        display: flex;
+        column-gap: 12px;
+        overflow-x: scroll;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        width: 100%;
+        margin: auto;
+        transition: all 2s ease-in-out;
+
+    }
+
+   
+
+
+    .box1>a>img {
+        border-radius: 5px;
+    }
+
+    /* BOX 2 container */
+
+    .button-ctrl1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .button-arrow3 {
+        position: absolute;
+        top: 0;
+        left: -1px;
+        font-size: 2rem;
+        background-color: transparent;
+        border: transparent;
+        color: #fff;
+        z-index: 100;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.14);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.8px);
+        -webkit-backdrop-filter: blur(2.8px);
+        padding: 93px 5px;
+    }
+
+    .button-arrow4 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 2rem;
+        padding: 93px 5px;
+        background-color: transparent;
+        border: transparent;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.14);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.8px);
+        -webkit-backdrop-filter: blur(2.8px);
+        color: #fff;
+        z-index: 100;
+    }
+
+  
+
+    .box2 {
+        display: flex;
+        column-gap: 12px;
+        overflow-x: scroll;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        width: 100%;
+        margin: auto;
+        transition: all 2s ease-in-out;
+    }
+
+    .box2>a>img {
+        border-radius: 5px;
+    }
+
+    /* BOX 3 container */
+
+    .button-ctrl2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .button-arrow5 {
+        position: absolute;
+        top: 0;
+        left: -1px;
+        font-size: 2rem;
+        background-color: transparent;
+        border: transparent;
+        color: #fff;
+        z-index: 100;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.14);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.8px);
+        -webkit-backdrop-filter: blur(2.8px);
+        padding: 93px 5px;
+    }
+
+    .button-arrow6 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 2rem;
+        padding: 93px 5px;
+        background-color: transparent;
+        border: transparent;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.14);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.8px);
+        -webkit-backdrop-filter: blur(2.8px);
+        color: #fff;
+        z-index: 100;
+    }
+
+    
+
+    .box3 {
+        display: flex;
+        column-gap: 12px;
+        overflow-x: scroll;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        width: 100%;
+        margin: auto;
+        transition: all 2s ease-in-out;
+    }
+
+    .box3>a>img {
+        border-radius: 5px;
+    }
+
+    /* BOX 4 container */
+
+    .button-ctrl3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .button-arrow7 {
+        position: absolute;
+        top: 0;
+        left: -1px;
+        font-size: 2rem;
+        background-color: transparent;
+        border: transparent;
+        color: #fff;
+        z-index: 100;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.14);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.8px);
+        -webkit-backdrop-filter: blur(2.8px);
+        padding: 93px 5px;
+    }
+
+    .button-arrow8 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 2rem;
+        padding: 93px 5px;
+        background-color: transparent;
+        border: transparent;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.14);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.8px);
+        -webkit-backdrop-filter: blur(2.8px);
+        color: #fff;
+        z-index: 100;
+    }
+
+
+    .box4 {
+        display: flex;
+        column-gap: 12px;
+        overflow-x: scroll;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        width: 100%;
+        margin: auto;
+        transition: all 2s ease-in-out;
+    }
+
+    .box4>a>img {
+        border-radius: 5px;
+    }
+
+}
