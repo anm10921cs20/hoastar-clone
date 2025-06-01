@@ -503,7 +503,7 @@ body {
 
     /* logo main container details */
     .logo-nav {
-        background-color: rgb(15, 16, 20);
+        background-color: rgb(170, 160, 160);
     }
 
     .logo-menu {
@@ -536,7 +536,7 @@ body {
     }
 
     .logo-h1 {
-        background: -webkit-linear-gradient(#eee, #333);
+        background: -webkit-linear-gradient(#ffffff, #333,#5fd4c5);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
