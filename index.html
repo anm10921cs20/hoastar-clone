@@ -2519,7 +2519,9 @@
         document.getElementById('alert-box').style.display = "none";
     }
 
-   
+    const button = document.getElementById('form');
+    button.addEventListener('submit', function (e) {
+        e.preventDefault();
 
         const names = document.getElementById('user-name');
         const email = document.getElementById('user-email');
@@ -2530,7 +2532,7 @@
        
 
 
-    
+    });
 
     function submit()
     {
