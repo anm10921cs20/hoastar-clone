@@ -33,10 +33,25 @@
         <div class="screen-module">
                 <div class="nav-bar"><br>
                         <div class="nav-header">
-
+                                <div class="alert-box" id="alert-box1">
+                                                        <button class="button" onclick="alertclose1()"><i
+                                                                        class="fas fa-close"></i></button>
+                                                        <br>
+                                                        <div class="register">
+                                                                <form id="form">
+                                                                        <br>
+                                                                        
+                                                                        <br>
+                                                                        <a class="btn btn-danger buttons"
+                                                                                onclick="logingout1()">Logout</a>
+                                                                        <br><br>
+                                                                        <p class="text-center" id="text-show-alert"></p>
+                                                                </form>
+                                                        </div>
+                                                </div>
                                 <!--nav bar user container-->
                                 <div class="user-icon">
-                                        <i class="fa-solid space1 fa-circle-user"></i>
+                                        <a onclick="alertopen1()"><i class="fa-solid space1 fa-circle-user"></i></a>
                                 </div>
                                 <div class="name">
                                         <h5 id="valueh"><br>
@@ -77,25 +92,7 @@
                                                         <div class="register">
                                                                 <form id="form">
                                                                         <br>
-                                                                        <h2 class="h4 text-center">User Register</h2>
-                                                                        <br>
-
-                                                                        <label>Name</label>
-                                                                        <input type="text" class="form-control"
-                                                                                name="name" id="user-name"
-                                                                                placeholder="User Name" required><br>
-
-
-
-                                                                        <label>Email</label>
-                                                                        <input type="email" class="form-control"
-                                                                                name="name" id="user-email"
-                                                                                placeholder="Email Address"
-                                                                                required><br>
-
-                                                                        <label>Message</label><br>
-                                                                        <textarea class="form-control"
-                                                                                placeholder="Message"></textarea>
+                                                                        
                                                                         <br>
                                                                         <a class="btn btn-danger buttons"
                                                                                 onclick="logingout()">Logout</a>
@@ -2457,15 +2454,27 @@
     function alertclose() {
         document.getElementById('alert-box').style.display = "none";
     }
+    function alertopen1() {
+                const open = document.getElementById('alert-box1');
+                open.style.display = "block";
+        }
+        function alertclose1() {
+                document.getElementById('alert-box1').style.display = "none";
+        }
         //login page
-        const names = localStorage.getItem('name-value');
+        const names = localStorage.getItem('name');
         const email = localStorage.getItem('email-value');
+        console.log(names);
         const loginname = document.getElementById('valueh');
         loginname.style.color = "#ff4343";
         loginname.innerText = names;
 
 
         function logingout()
+        {
+                window.location.href = "index.html";
+        }
+          function logingout1()
         {
                 window.location.href = "index.html";
         }

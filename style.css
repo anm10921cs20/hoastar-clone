@@ -10,6 +10,50 @@ body {
     body::-webkit-scrollbar {
         display: none;
     }
+     .alert-box {
+        width: 95%;
+        height: 500px;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.28);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.4px);
+        -webkit-backdrop-filter: blur(6.4px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 24px;
+        position: fixed;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        display: none;
+
+    }
+
+    .register {
+        width: 70%;
+        margin: auto;
+    }
+
+    .buttons {
+        width: 40%;
+        transform: translate(70px, 10px);
+    }
+
+    .button {
+        position: absolute;
+        transform: translate(300px,0);
+        font-size: 2rem;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+    }
+    input[type="radio"]
+    {
+        accent-color: #ff4343;
+        padding: 3px;
+        margin-left:10px;
+        
+    }
 
     .nav-bar {
         background: rgb(15, 16, 20);
@@ -23,11 +67,7 @@ body {
         left: 0;
     }
 
-    .user-icon {
-        margin-bottom: 15px;
-        margin-left: 18px;
-        font-size: 1rem;
-    }
+    
 
     .nav-header {
         display: none;
@@ -46,6 +86,7 @@ body {
 
     .space {
         padding: 0 12px;
+        color: #eee;
     }
 
     .space1 {
@@ -68,12 +109,13 @@ body {
     .nav-menu>li {
         margin: 0 11px;
     }
+    .login
+    {
+        color: #fff;
+    }
 
     /* logo main container details */
     .logo-nav {
-        position: sticky;
-        scroll-behavior: smooth;
-        top: 0;
         background-color: rgb(15, 16, 20);
     }
 
@@ -772,6 +814,50 @@ body {
     body::-webkit-scrollbar {
         display: none;
     }
+    .alert-box {
+        width: 50%;
+        height: 500px;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.28);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.4px);
+        -webkit-backdrop-filter: blur(6.4px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 24px;
+        position: fixed;
+        top: 44%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        display: none;
+
+    }
+
+    .register {
+        width: 70%;
+        margin: auto;
+    }
+
+    .buttons {
+        width: 40%;
+        transform: translate(70px, 10px);
+    }
+
+    .button {
+        position: absolute;
+        transform: translate(340px,0);
+        font-size: 2rem;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+    }
+    input[type="radio"]
+    {
+        accent-color: #ff4343;
+        padding: 3px;
+        margin-left:10px;
+        
+    }
 
     .nav-bar {
         background: rgb(15, 16, 20);
@@ -784,11 +870,6 @@ body {
         left: 0;
     }
 
-    .user-icon {
-        margin-bottom: 15px;
-        margin-left: 18px;
-        font-size: 1rem;
-    }
 
     .nav-header {
         display: none;
@@ -837,10 +918,7 @@ body {
 
 
     /* logo main container details */
-    .logo-nav {
-        position: sticky;
-        scroll-behavior: smooth;
-        top: 0;
+    .logo-nav { 
         background-color: rgb(15, 16, 20);
     }
 
@@ -894,7 +972,7 @@ body {
     .main-content {
         background: rgb(15, 16, 20);
         flex-direction: column;
-        height: 1138px;
+        height: 1368px;
         position: fixed;
         width: 100%;
         top: 0;
@@ -1156,7 +1234,50 @@ body {
     body::-webkit-scrollbar {
         display: none;
     }
+    .alert-box {
+        width: 80%;
+        height: 500px;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.28);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.4px);
+        -webkit-backdrop-filter: blur(6.4px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 24px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        
 
+    }
+
+    .register {
+        width: 70%;
+        margin: auto;
+    }
+
+    .buttons {
+        width: 40%;
+        transform: translate(70px, 10px);
+    }
+
+    .button {
+        position: absolute;
+        transform: translate(280px,0);
+        font-size: 2rem;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+    }
+    input[type="radio"]
+    {
+        accent-color: #ff4343;
+        padding: 3px;
+        margin-left:10px;
+        
+    }
     .nav-bar {
         background: rgb(15, 16, 20);
         width: 7%;
@@ -1304,7 +1425,7 @@ body {
         background: rgb(15, 16, 20);
         display: flex;
         flex-direction: column;
-        height: 900px;
+        height: 1366px;
         position: fixed;
         width: 100%;
         top: 0;
@@ -1686,6 +1807,50 @@ body {
     body::-webkit-scrollbar {
         display: none;
     }
+    .alert-box {
+        width: 20%;
+        height: 500px;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.28);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.4px);
+        -webkit-backdrop-filter: blur(6.4px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 24px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        display: none;
+
+    }
+
+    .register {
+        width: 70%;
+        margin: auto;
+    }
+
+    .buttons {
+        width: 40%;
+        transform: translate(70px, 10px);
+    }
+
+    .button {
+        position: absolute;
+        transform: translate(340px,0);
+        font-size: 2rem;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+    }
+    input[type="radio"]
+    {
+        accent-color: #ff4343;
+        padding: 3px;
+        margin-left:10px;
+        
+    }
 
     .nav-bar {
         background: rgb(15, 16, 20);
@@ -1710,6 +1875,7 @@ body {
         align-items: center;
         height: 40px;
         margin-right: 39px;
+        position: relative;
     }
 
     .name>h5 {
