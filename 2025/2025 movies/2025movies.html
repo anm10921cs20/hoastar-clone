@@ -47,14 +47,14 @@
             </div>
             <!-- nav bar menu buttons -->
             <ul class="nav-menu">
-                <li><a href="../../index.html"><i class="fa-solid space fa-house"></i> Home</a></li>
+                <li><a href="../../home.html"><i class="fa-solid space fa-house"></i> Home</a></li>
                 <li><a href="../../movies collection/movie.html"><i class="fa-solid space fa-clapperboard"></i>
                         Movies</a>
                 </li>
                 <li><a href="../../search/search.html"><i class="fa-solid space fa-magnifying-glass"></i> Search</a>
                 </li>
                 <li><a href="../../actor collection/actor.html"><i class="fa-solid space fa-user"></i> Actors</a></li>
-                <li><a href="../../index.html"><i class="fa-solid space fa-right-to-bracket"></i> Back</a></li>
+                <li><a href="../../update/update.html" target="_blank"><i class="fa-solid space fa-wrench"></i> Update</a></li>
             </ul>
             <img src="../../images/43_Amazing_Business_Logos_With_High_ROI_-_99designs-removebg-preview.png"
                 width="120px" height="120px" class="img-logo-nav" alt="">
@@ -299,6 +299,9 @@
 </body>
 <script>
         const value = document.getElementById('valueh');
+        const names = localStorage.getItem('name-value')
+        value.style.color = "#ff4343";
+        value.innerHTML = names;
 
        
 </script>
