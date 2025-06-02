@@ -94,10 +94,17 @@
                                     <input type="email" class="form-control" name="name" id="user-email"
                                         placeholder="Email Address" required><br>
 
-                                    <label>Message</label><br>
-                                    <textarea class="form-control" placeholder="Message"></textarea>
+                                    <label>Gender</label><br>
+                                    <input type="radio" name="gender" id="gender" value="Male" checked>Male
+                                    <input type="radio" name="gender" id="gender" value="Female" >Female
 
-                                    <button id="submit" class="btn btn-danger buttons">Register</button>
+                                    <br>      <br> 
+                                    <label>Nationality</label><br>
+                                    <input type="radio" name="nation" id="nation" value="Male" checked>India
+                                    <input type="radio" name="nation" id="nation" value="Female" >Other<br>
+                                    <a class="btn btn-danger buttons" onclick="submit()">Register</a>
+                                    <br><br>
+                                    <p class="text-center" id="text-show-alert"></p>
                                 </form>
                             </div>
 
@@ -2512,24 +2519,39 @@
         document.getElementById('alert-box').style.display = "none";
     }
 
-
-
-    const button = document.getElementById('form');
-    button.addEventListener('submit', function (e) {
-        e.preventDefault();
+   
 
         const names = document.getElementById('user-name');
         const email = document.getElementById('user-email');
         const namevalue = names.value;
         const emailvalue = email.value;
         localStorage.setItem('name-value', namevalue);
-        localStorage.setItem('user-email', emailvalue);
-        setTimeout(function (events) {
+        localStorage.setItem('email-value', emailvalue);
+       
+
+
+    
+
+    function submit()
+    {
+        const namesvalue = document.getElementById('user-name').value;
+        const emailaddress = document.getElementById('user-email').value;
+        const message = document.getElementById('text-show-alert');
+        
+        if(namesvalue === "" && emailaddress === "")
+        {
+                message.style.color="#ff4343";
+                message.innerHTML = "Please Fill The Form";
+        }
+        else
+        {
+                message.style.color = "#ffff00";
+                message.innerHTML = "Thank You";
+                 setTimeout(function (events) {
             window.location.href = "home.html";
         }, 1000);
-
-
-    });
+        }
+    }
 
 
 

@@ -441,6 +441,13 @@ body {
         border: none;
         color: #fff;
     }
+    input[type="radio"]
+    {
+        accent-color: #ff4343;
+        padding: 3px;
+        margin-left:10px;
+        
+    }
 
 
     .nav-bar {
