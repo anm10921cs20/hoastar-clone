@@ -2447,6 +2447,9 @@
 <script src="app.js"></script>
 <script src="bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
 <script>
+
+        
+        //alert button open and close in mobile and tablet
          function alertopen() {
         const open = document.getElementById('alert-box');
         open.style.display = "block";
@@ -2454,6 +2457,8 @@
     function alertclose() {
         document.getElementById('alert-box').style.display = "none";
     }
+
+    //alert open and close button computer and laptop
     function alertopen1() {
                 const open = document.getElementById('alert-box1');
                 open.style.display = "block";
@@ -2461,7 +2466,9 @@
         function alertclose1() {
                 document.getElementById('alert-box1').style.display = "none";
         }
-        //login page
+
+
+        //login page mobilepages
         const names = localStorage.getItem('name');
         const email = localStorage.getItem('email-value');
         console.log(names);
@@ -2469,15 +2476,21 @@
         loginname.style.color = "#ff4343";
         loginname.innerText = names;
 
-
+        //mobile and tablet screen
         function logingout()
         {
                 window.location.href = "index.html";
         }
+
+        //computer and laptop screen
           function logingout1()
         {
                 window.location.href = "index.html";
         }
+
+        //mobile view
+
+        window.alert('Welcome ' + names  + `\n  Happy To Search😀😀`);
 
 
 </script>
