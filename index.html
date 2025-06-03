@@ -36,55 +36,52 @@
                 <div class="nav-bar"><br>
 
                         <div class="nav-header">
-                                 <!--login page open and close container-->
+                                <!--login page open and close container-->
 
-                                                <div class="alert-box" id="alert-box1">
-                                                        <button class="button" onclick="alertclose1()"><i
-                                                                        class="fas fa-close"></i></button>
+                                <div class="alert-box" id="alert-box1">
+                                        <button class="button" onclick="alertclose1()"><i
+                                                        class="fas fa-close"></i></button>
+                                        <br>
+                                        <div class="register">
+                                                <form id="form1">
                                                         <br>
-                                                        <div class="register">
-                                                                <form id="form1">
-                                                                        <br>
-                                                                        <h2 class="h4 text-center">User Register</h2>
-                                                                        <br>
+                                                        <h2 class="h4 text-center">User Register</h2>
+                                                        <br>
 
-                                                                        <label>Name</label>
-                                                                        <input type="text" class="form-control"
-                                                                                name="name" id="user-name1"
-                                                                                placeholder="User Name" required><br>
+                                                        <label>Name</label>
+                                                        <input type="text" class="form-control" name="name"
+                                                                id="user-name1" placeholder="User Name" required><br>
 
 
 
-                                                                        <label>Email</label>
-                                                                        <input type="email" class="form-control"
-                                                                                name="name" id="user-email1"
-                                                                                placeholder="Email Address"
-                                                                                required><br>
+                                                        <label>Email</label>
+                                                        <input type="email" class="form-control" name="name"
+                                                                id="user-email1" placeholder="Email Address"
+                                                                required><br>
 
-                                                                        <label>Gender</label><br>
-                                                                        <input type="radio" name="gender" id="gender"
-                                                                                value="Male">Male
-                                                                        <input type="radio" name="gender" id="gender"
-                                                                                value="Female">Female
+                                                        <label>Gender</label><br>
+                                                        <input type="radio" name="gender" id="gender" value="Male">Male
+                                                        <input type="radio" name="gender" id="gender"
+                                                                value="Female">Female
 
-                                                                        <br> <br>
-                                                                        <label>Nationality</label><br>
-                                                                        <input type="radio" name="nation" id="nation"
-                                                                                value="India" checked>India
-                                                                        <input type="radio" name="nation" id="nation"
-                                                                                value="Other">Other<br>
-                                                                        <button
-                                                                                class="btn btn-danger buttons">Register</button>
-                                                                        <br><br>
-                                                                        <p class="text-center" id="text-show-alert1"></p>
-                                                                </form>
-                                                        </div>
+                                                        <br> <br>
+                                                        <label>Nationality</label><br>
+                                                        <input type="radio" name="nation" id="nation" value="India"
+                                                                checked>India
+                                                        <input type="radio" name="nation" id="nation"
+                                                                value="Other">Other<br>
+                                                        <button class="btn btn-danger buttons">Register</button>
+                                                        <br><br>
+                                                        <p class="text-center" id="text-show-alert1"></p>
+                                                </form>
+                                        </div>
 
-                                                </div>
+                                </div>
 
                                 <!--nav bar user container-->
                                 <div class="user-icon">
-                                       <a type="button" onclick="alertopen1()"><i class="fa-solid space1 fa-circle-user"></i></a>
+                                        <a type="button" onclick="alertopen1()"><i
+                                                        class="fa-solid space1 fa-circle-user"></i></a>
                                 </div>
                                 <div class="name">
                                         <h5 id="valueh">Login<br>
@@ -102,7 +99,8 @@
                                                 Search</a></li>
                                 <li><a href="./actor collection/actor.html"><i class="fa-solid space fa-user"></i>
                                                 Actors</a></li>
-                                <li><a class="login" onclick="alertopen()"><i class="fa-solid space fa-right-to-bracket"></i>
+                                <li><a class="login" onclick="alertopen()"><i
+                                                        class="fa-solid space fa-right-to-bracket"></i>
                                                 Login</a>
                                 </li>
                         </ul>
@@ -126,7 +124,14 @@
                                                                         class="fas fa-close"></i></button>
                                                         <br>
                                                         <div class="register">
-                                                                <form id="form">
+                                                                <form method="post" id="form">
+                                                                        <input type="hidden" name="access_key"
+                                                                                value="27b60d85-5a26-4e30-a907-ac88009eb4fc">
+                                                                        <input type="hidden" name="subject"
+                                                                                value="Mahan Movies New User Details">
+                                                                        <input type="checkbox" name="botcheck" id=""
+                                                                                style="display: none;">
+                                                                                <input type="hidden" name="from_name" value="Mahan Movies">
                                                                         <br>
                                                                         <h2 class="h4 text-center">User Register</h2>
                                                                         <br>
@@ -140,7 +145,7 @@
 
                                                                         <label>Email</label>
                                                                         <input type="email" class="form-control"
-                                                                                name="name" id="user-email"
+                                                                                name="email" id="user-email"
                                                                                 placeholder="Email Address"
                                                                                 required><br>
 
@@ -2564,7 +2569,7 @@
                 localStorage.setItem('nation', nationvalue)
 
 
-                window.location.href = "home.html"
+               
         });
         const message = document.getElementById('text-show-alert');
         form.addEventListener('click', function () {
@@ -2581,7 +2586,7 @@
                         if (nation[j].checked)
                                 var nationvalues = nation[j].value;
                 }
-                if (namesvalues == "" || emailsvalues == "" ) {
+                if (namesvalues == "" || emailsvalues == "") {
                         message.style.color = "red";
                         message.innerText = "Plese Fill The Form";
 
@@ -2593,9 +2598,51 @@
         }
         )
 
-        
-         
-        
+
+        form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const formData = new FormData(form);
+                const object = Object.fromEntries(formData);
+                const json = JSON.stringify(object);
+                message.style.color = "#ff4343";
+                message.innerHTML = "Please wait...";
+
+                fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        headers: {
+                                'Content-Type': 'application/json',
+                                'Accept': 'application/json'
+                        },
+                        body: json
+                })
+                        .then(async (response) => {
+                                let json = await response.json();
+                                if (response.status == 200) {
+                                        message.style.color = "var(--bs-warning)";
+                                        message.innerHTML = 'Thank You By Mahan Movies';
+                                        window.location.href = "home.html";
+                                } else {
+                                        console.log(response);
+                                        message.style.color = "var(--bs-danger)"
+                                        message.innerHTML = json.message;
+                                }
+                        })
+                        .catch(error => {
+                                console.log(error);
+                                message.innerHTML = "Something went wrong!";
+                        })
+                        .then(function () {
+                                form.reset();
+                                setTimeout(() => {
+                                        message.style.display = "none";
+                                }, 3000);
+                        });
+        });
+
+
+
+
+
 
         //mobile screen end login page
 
