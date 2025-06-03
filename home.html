@@ -40,7 +40,9 @@
                                                         <div class="register">
                                                                 <form id="form">
                                                                         <br>
-                                                                        
+                                                                        <div class="name-class">
+                                                                                <h1 class="text-danger">User Name</h1>
+                                                                        </div>
                                                                         <br>
                                                                         <a class="btn btn-danger buttons"
                                                                                 onclick="logingout1()">Logout</a>
@@ -92,8 +94,16 @@
                                                         <div class="register">
                                                                 <form id="form">
                                                                         <br>
-                                                                        
+                                                                        <h1 class="h3 text-center" >User Details</h1>
                                                                         <br>
+                                                                        <h2 class="h6 text-light">User Name : <span class=" text-danger" id="username-details"></span></h2>
+                                                                        <br>
+                                                                        <h2 class="h6 text-light text-wrap">Email:<span class="text-danger " id="email-details"></span></h2>
+                                                                        <br>
+                                                                        <h2 class="h6 text-light">Gender : <span class="h6 text-danger" id="gender-details"></span></h2>
+                                                                        <br>
+                                                                        <h2 class="h6 text-light">Nation : <span class="h6 text-danger" id="nation-details"></span></h2>
+                                                                        <br><br><a href="movierequest.html" target="_blank" class=" text-decoration-none text-warning p-4">Movie Request Contact</a><br><br>
                                                                         <a class="btn btn-danger buttons"
                                                                                 onclick="logingout()">Logout</a>
                                                                         <br><br>
@@ -2470,11 +2480,23 @@
 
         //login page mobilepages
         const names = localStorage.getItem('name');
-        const email = localStorage.getItem('email-value');
+        const email = localStorage.getItem('email');
+        const  gender = localStorage.getItem('gender');
+        const nation = localStorage.getItem('nation');
+        const namedetails = document.getElementById('username-details');
+        namedetails.innerText = names;
         console.log(names);
         const loginname = document.getElementById('valueh');
         loginname.style.color = "#ff4343";
         loginname.innerText = names;
+        
+        const emaildetails = document.getElementById('email-details');
+        const genderdetails = document.getElementById('gender-details');
+        const nationdetails = document.getElementById('nation-details');
+        //namedetails.innerHTML = namevalue;
+        emaildetails.innerHTML = email;
+        genderdetails.innerHTML = gender;
+        nationdetails.innerHTML = nation;
 
         //mobile and tablet screen
         function logingout()

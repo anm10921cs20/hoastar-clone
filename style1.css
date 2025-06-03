@@ -11,8 +11,8 @@ body {
         display: none;
     }
     .alert-box {
-        width: 80%;
-        height: 500px;
+        width: 90%;
+        height: 450px;
         /* From https://css.glass */
         background: rgba(255, 255, 255, 0.28);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -793,7 +793,7 @@ body {
         display: none;
     }
     .alert-box {
-        width: 80%;
+        width: 45%;
         height: 500px;
         /* From https://css.glass */
         background: rgba(255, 255, 255, 0.28);
@@ -823,7 +823,7 @@ body {
 
     .button {
         position: absolute;
-        transform: translate(280px,0);
+        transform: translate(300px,0);
         font-size: 2rem;
         background-color: transparent;
         border: none;
@@ -896,9 +896,6 @@ body {
     
     /* logo main container details */
     .logo-nav {
-        position: sticky;
-        scroll-behavior: smooth;
-        top: 0;
         background-color: rgb(15, 16, 20);
     }
 
@@ -952,7 +949,7 @@ body {
     .main-content {
         background: rgb(15, 16, 20);
         flex-direction: column;
-        height: 1138px;
+        height: 1368px;
         position: fixed;
         width: 100%;
         top: 0;
