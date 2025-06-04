@@ -167,7 +167,7 @@
 
             .request-box {
                 height: 550px;
-                width: 600px;
+                width: 400px;
                 /* From https://css.glass */
                 background: rgba(255, 255, 255, 0.15);
                 border-radius: 16px;
@@ -180,7 +180,7 @@
             form {
                 display: flex;
                 flex-direction: column;
-                width: 70%;
+                width: 80%;
                 margin: auto;
                 padding: 10px;
             }
@@ -221,7 +221,7 @@
 
             .request-box {
                 height: 550px;
-                width: 600px;
+                width: 400px;
                 /* From https://css.glass */
                 background: rgba(255, 255, 255, 0.15);
                 border-radius: 16px;
@@ -368,8 +368,8 @@
                 <textarea name="message" id="text" placeholder="I'm Here"></textarea><br>
                 <button>Send Request</button>
             </form>
-            <div id="message" class="text-light text-center"></div>
-            <div id="message1" class="text-light text-center"></div>
+            <h5 id="message" class=" h6 text-center"></h5>
+            <h5 id="message1" class=" h6 text-center"></h5>
         </div>
 
     </div>
@@ -387,14 +387,19 @@
         const names1 = localStorage.getItem('name1');
 
         if (moviesname === "" && email === "") {
-            message.style.color = "#ff4343";
+            message.style.color = "var(--bs-danger)";
+            message1.style.color = "var(--bs-danger)";
             message.innerHTML = `${names} Please Fill The Form`;
             message1.innerHTML = `${names1} Please Fill The Form`;
 
         }
         else {
             message.style.color = "var(--bs-warning)";
-            message.innerHTML = "Thank You By MahanMovies"
+            message1.style.color = "var(--bs-warning)";
+            message.innerHTML = "Thank You By MahanMovies";
+            message1.innerHTML = "Thank You By MahanMovies";
+
+            
         }
     });
 
