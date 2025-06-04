@@ -90,6 +90,10 @@
             border: none;
             color: #fff;
         }
+        #message
+        {
+            display: none;
+        }
         
         
         
@@ -108,10 +112,10 @@
         <div class="request-box">
             <h1 class="h3 text-light text-center py-2">Movie Request</h1>
             <form class="form" id="form" action="https://api.web3forms.com/submit" method="POST">
-
                   <input type="hidden" name="access_key" value="27b60d85-5a26-4e30-a907-ac88009eb4fc">
                    <input type="hidden" name="subject" value="Mahan Movies Movie Request Details">
                    <input type="hidden" name="from_name" value="🍿Mahan Movies">
+                   <input type="hidden" name="redirect" value="https://mahanmovie.vercel.app/home.html">
                 <label>Movies Name</label>
                 <input type="text" name="movie name" class="movies-name" id="movies-name" placeholder="Type Movie Name" required>
                 <br>
@@ -148,6 +152,7 @@
                 <button>Send Request</button>
             </form>
              <div id="message" class="text-light text-center"></div>
+              <div id="message1" class="text-light text-center"></div>
         </div>
        
     </div>
@@ -160,6 +165,8 @@
     const moviesname = document.getElementById('movies-name').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message');
+    const message1= document.getElementById('message1');
+
     const names = localStorage.getItem('name');
      const names1 = localStorage.getItem('name1');
     
@@ -167,6 +174,7 @@
         {
             message.style.color = "#ff4343";
             message.innerHTML = `${names} Please Fill The Form`;
+            message1.innerHTML = `${names1} Please Fill The Form`;
 
         }
         else
