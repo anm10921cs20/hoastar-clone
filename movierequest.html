@@ -41,67 +41,283 @@
             background-position: center;
             background-repeat: no-repeat;
         }
-         
-        /* desktop screen  */
+
+        /* mobile sm screen  */
+
+        @media only screen and (min-width:100px) and (max-width:399px) {
+             .request-container {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .request-box {
+                height: 550px;
+                width: 300px;
+                /* From https://css.glass */
+                background: rgba(255, 255, 255, 0.15);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(9px);
+                -webkit-backdrop-filter: blur(9px);
+                padding: 20px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                margin: auto;
+                padding: 10px;
+            }
+
+            label {
+                color: #fff;
+            }
+
+            input:focus {
+                outline: none;
+            }
+
+            textarea:focus {
+                outline: none;
+            }
+
+            button {
+                background-color: #ff4343;
+                border: none;
+                color: #fff;
+            }
+
+            #message1 {
+                display: none;
+            }
+
+        }
+
+
+
+        /* mobile lg screen  */
+
+        @media only screen and (min-width:400px) and (max-width:767px) {
+
+             .request-container {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .request-box {
+                height: 550px;
+                width: 350px;
+                /* From https://css.glass */
+                background: rgba(255, 255, 255, 0.15);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(9px);
+                -webkit-backdrop-filter: blur(9px);
+                padding: 20px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                margin: auto;
+                padding: 10px;
+            }
+
+            label {
+                color: #fff;
+            }
+
+            input:focus {
+                outline: none;
+            }
+
+            textarea:focus {
+                outline: none;
+            }
+
+            button {
+                background-color: #ff4343;
+                border: none;
+                color: #fff;
+            }
+
+            #message1 {
+                display: none;
+            }
+        }
+
+        /* tablet screen  */
+
+        @media only screen and (min-width:768px) and (max-width:1023px) {
+             .request-container {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .request-box {
+                height: 550px;
+                width: 600px;
+                /* From https://css.glass */
+                background: rgba(255, 255, 255, 0.15);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(9px);
+                -webkit-backdrop-filter: blur(9px);
+                padding: 20px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                margin: auto;
+                padding: 10px;
+            }
+
+            label {
+                color: #fff;
+            }
+
+            input:focus {
+                outline: none;
+            }
+
+            textarea:focus {
+                outline: none;
+            }
+
+            button {
+                background-color: #ff4343;
+                border: none;
+                color: #fff;
+            }
+
+            #message1 {
+                display: none;
+            }
+        }
+
+        /* laptop screen  */
+
+        @media only screen and (min-width:1024px) and (max-width:1439px) {
+             .request-container {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .request-box {
+                height: 550px;
+                width: 600px;
+                /* From https://css.glass */
+                background: rgba(255, 255, 255, 0.15);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(9px);
+                -webkit-backdrop-filter: blur(9px);
+                padding: 20px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                margin: auto;
+                padding: 10px;
+            }
+
+            label {
+                color: #fff;
+            }
+
+            input:focus {
+                outline: none;
+            }
+
+            textarea:focus {
+                outline: none;
+            }
+
+            button {
+                background-color: #ff4343;
+                border: none;
+                color: #fff;
+            }
+
+            #message {
+                display: none;
+            }
+        }
 
         @media only screen and (min-width:1440px) and (max-width:2159px) {
-             .request-container {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-        }
+            .request-container {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+            }
 
-        .request-box {
-            height: 550px;
-            width: 400px;
-            /* From https://css.glass */
-            background: rgba(255, 255, 255, 0.15);
-            border-radius: 16px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(9px);
-            -webkit-backdrop-filter: blur(9px);
-            padding: 20px;
-        }
-        form
-        {
-            display: flex;
-            flex-direction: column;
-            width: 80%;
-            margin: auto;
-            padding: 10px;
-        }
-        label
-        {
-            color: #fff;
-        }
-        input:focus
-        {
-            outline: none;
-        }
-        textarea:focus
-        {
-            outline: none;
-        }
-        button
-        {
-            background-color: #ff4343;
-            border: none;
-            color: #fff;
-        }
-        #message
-        {
-            display: none;
-        }
-        
-        
-        
-        
-            
-        }
+            .request-box {
+                height: 550px;
+                width: 400px;
+                /* From https://css.glass */
+                background: rgba(255, 255, 255, 0.15);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(9px);
+                -webkit-backdrop-filter: blur(9px);
+                padding: 20px;
+            }
 
-       
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                margin: auto;
+                padding: 10px;
+            }
+
+            label {
+                color: #fff;
+            }
+
+            input:focus {
+                outline: none;
+            }
+
+            textarea:focus {
+                outline: none;
+            }
+
+            button {
+                background-color: #ff4343;
+                border: none;
+                color: #fff;
+            }
+
+            #message {
+                display: none;
+            }
+
+
+
+
+
+        }
     </style>
 
 </head>
@@ -112,16 +328,17 @@
         <div class="request-box">
             <h1 class="h3 text-light text-center py-2">Movie Request</h1>
             <form class="form" id="form" action="https://api.web3forms.com/submit" method="POST">
-                  <input type="hidden" name="access_key" value="27b60d85-5a26-4e30-a907-ac88009eb4fc">
-                   <input type="hidden" name="subject" value="Mahan Movies Movie Request Details">
-                   <input type="hidden" name="from_name" value="🍿Mahan Movies">
-                   <input type="hidden" name="redirect" value="https://mahanmovie.vercel.app/home.html">
+                <input type="hidden" name="access_key" value="27b60d85-5a26-4e30-a907-ac88009eb4fc">
+                <input type="hidden" name="subject" value="Mahan Movies Movie Request Details">
+                <input type="hidden" name="from_name" value="🍿Mahan Movies">
+                <input type="hidden" name="redirect" value="https://mahanmovie.vercel.app/home.html">
                 <label>Movies Name</label>
-                <input type="text" name="movie name" class="movies-name" id="movies-name" placeholder="Type Movie Name" required>
+                <input type="text" name="movie name" class="movies-name" id="movies-name" placeholder="Type Movie Name"
+                    required>
                 <br>
                 <label>User Email</label>
                 <input type="email" name="Email" id="email" class="email" placeholder="Email Address" required><br>
-                <label >Movies Year</label>
+                <label>Movies Year</label>
                 <select name="MoviesYear" id="Movies-Year" required>
                     <option value="Which Year">Which Year</option>
                     <option value="2025">2025</option>
@@ -137,7 +354,7 @@
                     <option value="2015">2015</option>
                     <option value="2014">2014</option>
                 </select><br>
-                <label >Genere</label>
+                <label>Genere</label>
                 <select name="Genere" id="genere" required>
                     <option value="genere">Genere</option>
                     <option value="family">Family</option>
@@ -151,39 +368,37 @@
                 <textarea name="message" id="text" placeholder="I'm Here"></textarea><br>
                 <button>Send Request</button>
             </form>
-             <div id="message" class="text-light text-center"></div>
-              <div id="message1" class="text-light text-center"></div>
+            <div id="message" class="text-light text-center"></div>
+            <div id="message1" class="text-light text-center"></div>
         </div>
-       
+
     </div>
 </body>
 <script>
 
     const form = document.getElementById('form');
-    form.addEventListener('click',function()
-    {
-    const moviesname = document.getElementById('movies-name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message');
-    const message1= document.getElementById('message1');
+    form.addEventListener('click', function () {
+        const moviesname = document.getElementById('movies-name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message');
+        const message1 = document.getElementById('message1');
 
-    const names = localStorage.getItem('name');
-     const names1 = localStorage.getItem('name1');
-    
-        if(moviesname === "" && email === "")
-        {
+        const names = localStorage.getItem('name');
+        const names1 = localStorage.getItem('name1');
+
+        if (moviesname === "" && email === "") {
             message.style.color = "#ff4343";
             message.innerHTML = `${names} Please Fill The Form`;
             message1.innerHTML = `${names1} Please Fill The Form`;
 
         }
-        else
-        {
+        else {
             message.style.color = "var(--bs-warning)";
             message.innerHTML = "Thank You By MahanMovies"
         }
     });
-   
-   
+
+
 </script>
+
 </html>
