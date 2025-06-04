@@ -40,9 +40,16 @@
                                                         <div class="register">
                                                                 <form id="form">
                                                                         <br>
-                                                                        <div class="name-class">
-                                                                                <h1 class="text-danger">User Name</h1>
-                                                                        </div>
+                                                                         <h1 class="h3 text-center" >User Details</h1>
+                                                                        <br>
+                                                                        <h2 class="h6 text-light">User Name : <span class=" text-danger" id="username-details1"></span></h2>
+                                                                        <br>
+                                                                        <h2 class="h6 text-light text-wrap">Email : <span class="text-danger " id="email-details1"></span></h2>
+                                                                        <br>
+                                                                        <h2 class="h6 text-light">Gender : <span class="h6 text-danger" id="gender-details1"></span></h2>
+                                                                        <br>
+                                                                        <h2 class="h6 text-light">Nation : <span class="h6 text-danger" id="nation-details1"></span></h2>
+                                                                        <br><br><a style="display:flex; justify-content:center; text-decoration:none; color:var(--bs-warning)" href="movierequest.html" target="_blank">Movie Request Contact</a><br>
                                                                         <br>
                                                                         <a class="btn btn-danger buttons"
                                                                                 onclick="logingout1()">Logout</a>
@@ -2485,10 +2492,7 @@
         const nation = localStorage.getItem('nation');
         const namedetails = document.getElementById('username-details');
         namedetails.innerText = names;
-        console.log(names);
-        const loginname = document.getElementById('valueh');
-        loginname.style.color = "#ff4343";
-        loginname.innerText = names;
+       
         
         const emaildetails = document.getElementById('email-details');
         const genderdetails = document.getElementById('gender-details');
@@ -2510,11 +2514,30 @@
                 window.location.href = "index.html";
         }
 
-        //mobile view
+       
 
-        window.alert('Welcome ' + names  + `\n  Happy To Search😀😀`);
+        //computer and laptop
 
+        const names1 = localStorage.getItem('name1');
+        const email1 = localStorage.getItem('email1');
+        const  gender1= localStorage.getItem('gender1');
+        const nation1 = localStorage.getItem('nation1');
 
+         const loginname = document.getElementById('valueh');
+        loginname.style.color = "#ff4343";
+        loginname.innerText = names1;
+
+         const namedetails1 = document.getElementById('username-details1');
+        namedetails1.innerText = names1;
+       
+        
+        const emaildetails1 = document.getElementById('email-details1');
+        const genderdetails1 = document.getElementById('gender-details1');
+        const nationdetails1 = document.getElementById('nation-details1');
+        //namedetails.innerHTML = namevalue;
+        emaildetails1.innerHTML = email1;
+        genderdetails1.innerHTML = gender1;
+        nationdetails1.innerHTML = nation1;
 </script>
 
 </html>

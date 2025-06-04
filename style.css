@@ -1235,7 +1235,7 @@ body {
         display: none;
     }
     .alert-box {
-        width: 80%;
+        width: 30%;
         height: 500px;
         /* From https://css.glass */
         background: rgba(255, 255, 255, 0.28);
@@ -1265,11 +1265,15 @@ body {
 
     .button {
         position: absolute;
-        transform: translate(280px,0);
+        transform: translate(310px,0);
         font-size: 2rem;
         background-color: transparent;
         border: none;
         color: #fff;
+    }
+    input:focus,input:hover,input:active
+    {
+        outline: 1px solid #ff4343;
     }
     input[type="radio"]
     {
@@ -1851,6 +1855,7 @@ body {
         margin-left:10px;
         
     }
+    
 
     .nav-bar {
         background: rgb(15, 16, 20);

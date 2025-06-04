@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#ff4343">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahan Movies-request</title>
+    <!--Bootstrap css added-->
+    <link rel="stylesheet" href="./bootstrap-5.3.5-dist/css/bootstrap.min.css">
+
+    <!-- logo added -->
+    <link rel="icon" href="images/movie.png" type="image/png">
+
+    <!--Google Fonts added-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!--Font awesome added-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--internal style sheet insert-->
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url('https://e0.pxfuel.com/wallpapers/472/908/desktop-wallpaper-black-gradient-linear-purple-dark-slate-blue-483d8b-000000-300a%C2%B0.jpg');
+            background-size: cover;
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+         
+        /* desktop screen  */
+
+        @media only screen and (min-width:1440px) and (max-width:2159px) {
+             .request-container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .request-box {
+            height: 550px;
+            width: 400px;
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(9px);
+            -webkit-backdrop-filter: blur(9px);
+            padding: 20px;
+        }
+        form
+        {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: auto;
+            padding: 10px;
+        }
+        label
+        {
+            color: #fff;
+        }
+        input:focus
+        {
+            outline: none;
+        }
+        textarea:focus
+        {
+            outline: none;
+        }
+        button
+        {
+            background-color: #ff4343;
+            border: none;
+            color: #fff;
+        }
+        
+        
+        
+        
+            
+        }
+
+       
+    </style>
+
+</head>
+<!--nav bar container -->
+
+<body>
+    <div class="request-container">
+        <div class="request-box">
+            <h1 class="h3 text-light text-center py-2">Movie Request</h1>
+            <form class="form" id="form" action="https://api.web3forms.com/submit" method="POST">
+
+                  <input type="hidden" name="access_key" value="27b60d85-5a26-4e30-a907-ac88009eb4fc">
+                   <input type="hidden" name="subject" value="Mahan Movies Movie Request Details">
+                   <input type="hidden" name="from_name" value="🍿Mahan Movies">
+                <label>Movies Name</label>
+                <input type="text" name="movie name" class="movies-name" id="movies-name" placeholder="Type Movie Name" required>
+                <br>
+                <label>User Email</label>
+                <input type="email" name="Email" id="email" class="email" placeholder="Email Address" required><br>
+                <label >Movies Year</label>
+                <select name="MoviesYear" id="Movies-Year" required>
+                    <option value="Which Year">Which Year</option>
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                </select><br>
+                <label >Genere</label>
+                <select name="Genere" id="genere" required>
+                    <option value="genere">Genere</option>
+                    <option value="family">Family</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Action">Action</option>
+                    <option value="Crime">Crime</option>
+                </select>
+                <br>
+                <label>Message</label>
+                <textarea name="message" id="text" placeholder="I'm Here"></textarea><br>
+                <button>Send Request</button>
+            </form>
+             <div id="message" class="text-light text-center"></div>
+        </div>
+       
+    </div>
+</body>
+<script>
+
+    const form = document.getElementById('form');
+    form.addEventListener('click',function()
+    {
+    const moviesname = document.getElementById('movies-name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message');
+    const names = localStorage.getItem('name');
+     const names1 = localStorage.getItem('name1');
+    
+        if(moviesname === "" && email === "")
+        {
+            message.style.color = "#ff4343";
+            message.innerHTML = `${names} ${names1} Please Fill The Form`;
+        }
+        else
+        {
+            message.style.color = "var(--bs-warning)";
+            message.innerHTML = "Thank You By MahanMovies"
+        }
+    });
+   
+   
+</script>
+</html>

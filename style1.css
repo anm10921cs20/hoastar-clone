@@ -1212,7 +1212,7 @@ body {
         display: none;
     }
     .alert-box {
-        width: 80%;
+        width: 30%;
         height: 500px;
         /* From https://css.glass */
         background: rgba(255, 255, 255, 0.28);
@@ -1242,7 +1242,7 @@ body {
 
     .button {
         position: absolute;
-        transform: translate(280px,0);
+        transform: translate(360px,0);
         font-size: 2rem;
         background-color: transparent;
         border: none;
@@ -1785,7 +1785,7 @@ body {
         display: none;
     }
     .alert-box {
-        width: 80%;
+        width: 20%;
         height: 500px;
         /* From https://css.glass */
         background: rgba(255, 255, 255, 0.28);
@@ -1815,7 +1815,7 @@ body {
 
     .button {
         position: absolute;
-        transform: translate(280px,0);
+        transform: translate(330px,0);
         font-size: 2rem;
         background-color: transparent;
         border: none;

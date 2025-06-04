@@ -43,11 +43,17 @@
                                                         class="fas fa-close"></i></button>
                                         <br>
                                         <div class="register">
-                                                <form id="form1">
+                                                <form method="post" id="form1">
                                                         <br>
                                                         <h2 class="h4 text-center">User Register</h2>
                                                         <br>
-
+                                                         <input type="hidden" name="access_key"
+                                                                                value="27b60d85-5a26-4e30-a907-ac88009eb4fc">
+                                                                        <input type="hidden" name="subject"
+                                                                                value="Mahan Movies New User Details">
+                                                                        <input type="checkbox" name="botcheck" id=""
+                                                                                style="display: none;">
+                                                                                <input type="hidden" name="from_name" value="🍿Mahan Movies">
                                                         <label>Name</label>
                                                         <input type="text" class="form-control" name="name"
                                                                 id="user-name1" placeholder="User Name" required><br>
@@ -55,20 +61,20 @@
 
 
                                                         <label>Email</label>
-                                                        <input type="email" class="form-control" name="name"
+                                                        <input type="email" class="form-control" name="email"
                                                                 id="user-email1" placeholder="Email Address"
                                                                 required><br>
 
                                                         <label>Gender</label><br>
-                                                        <input type="radio" name="gender" id="gender" value="Male">Male
-                                                        <input type="radio" name="gender" id="gender"
+                                                        <input type="radio" name="gender1" id="gender" value="Male">Male
+                                                        <input type="radio" name="gender1" id="gender"
                                                                 value="Female">Female
 
                                                         <br> <br>
                                                         <label>Nationality</label><br>
-                                                        <input type="radio" name="nation" id="nation" value="India"
+                                                        <input type="radio" name="nation1" id="nation" value="India"
                                                                 checked>India
-                                                        <input type="radio" name="nation" id="nation"
+                                                        <input type="radio" name="nation1" id="nation"
                                                                 value="Other">Other<br>
                                                         <button class="btn btn-danger buttons">Register</button>
                                                         <br><br>
@@ -131,7 +137,7 @@
                                                                                 value="Mahan Movies New User Details">
                                                                         <input type="checkbox" name="botcheck" id=""
                                                                                 style="display: none;">
-                                                                                <input type="hidden" name="from_name" value="Mahan Movies">
+                                                                                <input type="hidden" name="from_name" value="🍿Mahan Movies">
                                                                         <br>
                                                                         <h2 class="h4 text-center">User Register</h2>
                                                                         <br>
@@ -2538,7 +2544,6 @@
         //mobile screen start login page
 
         const form = document.getElementById('form');
-        const form1 = document.getElementById('form1')
         const names = document.getElementById('user-name');
         const email = document.getElementById('user-email');
 
@@ -2645,6 +2650,109 @@
 
 
         //mobile screen end login page
+
+        //laptop and desktop
+
+         const form1 = document.getElementById('form1');
+        const names1 = document.getElementById('user-name1');
+        const email1 = document.getElementById('user-email1');
+
+
+        form1.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                const namevalue1 = names1.value;
+                const emailvalue1 = email1.value;
+
+                var gender1 = document.getElementsByName('gender1');
+                for (i = 0; i < gender1.length; i++) {
+                        if (gender1[i].checked)
+                                var gendervalue1 = gender1[i].value;
+
+                }
+                var nation1 = document.getElementsByName('nation1');
+                for (j = 0; j < nation1.length; j++) {
+                        if (nation1[j].checked)
+                                var nationvalue1 = nation1[j].value;
+                }
+
+
+
+                localStorage.setItem('name1', namevalue1);
+                localStorage.setItem('email1', emailvalue1);
+                localStorage.setItem('gender1', gendervalue1);
+                localStorage.setItem('nation1', nationvalue1)
+
+               
+               
+        });
+
+         const message1 = document.getElementById('text-show-alert1');
+        form1.addEventListener('click', function () {
+                const namesvalues1 = names1.value;
+                const emailsvalues1 = email1.value;
+                var gender = document.getElementsByName('gender');
+                for (i = 0; i < gender.length; i++) {
+                        if (gender[i].checked)
+                                var gendervalues = gender[i].value;
+
+                }
+                var nation = document.getElementsByName('nation');
+                for (j = 0; j < nation.length; j++) {
+                        if (nation[j].checked)
+                                var nationvalues = nation[j].value;
+                }
+                if (namesvalues1 == "" || emailsvalues1 == "") {
+                        message1.style.color = "red";
+                        message1.innerText = "Plese Fill The Form";
+
+                }
+                else {
+                        message1.style.color = "var(--bs-warning)";
+                        message1.innerText = "Thank You By MahanMovies";
+                }
+        }
+        )
+
+          form1.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const formData = new FormData(form1);
+                const object = Object.fromEntries(formData);
+                const json = JSON.stringify(object);
+                message1.style.color = "#ff4343";
+                message1.innerHTML = "Please wait...";
+
+                fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        headers: {
+                                'Content-Type': 'application/json',
+                                'Accept': 'application/json'
+                        },
+                        body: json
+                })
+                        .then(async (response) => {
+                                let json = await response.json();
+                                if (response.status == 200) {
+                                        message1.style.color = "var(--bs-warning)";
+                                        message1.innerHTML = 'Thank You By Mahan Movies';
+                                        window.location.href = "home.html";
+                                } else {
+                                        console.log(response);
+                                        message1.style.color = "var(--bs-danger)"
+                                        message1.innerHTML = json.message;
+                                }
+                        })
+                        .catch(error => {
+                                console.log(error);
+                                message1.innerHTML = "Something went wrong!";
+                        })
+                        .then(function () {
+                                form.reset();
+                                setTimeout(() => {
+                                        message1.style.display = "none";
+                                }, 3000);
+                        });
+        });
 
 
 
