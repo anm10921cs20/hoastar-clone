@@ -199,7 +199,6 @@
 
     .box>a>div {
         transition: all 0.3s ease-in-out;
-        background-color: #e1e6f0;
         width: 170px;
         height: 230px;
         display: flex;
@@ -208,17 +207,9 @@
     }
 
     .action {
-        background-image: url('https://m.media-amazon.com/images/M/MV5BMmYwZjc3MTYtZjg4Ni00MWY3LThiNzctN2ZkOTVlMTMyOWMwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg');
-        background-position: center;
-        background-size: cover;
-        filter: opacity(1);
-        color: #ff4343;
-        /* From https://css.glass */
-        background: rgba(255, 255, 255, 0);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(3.9px);
-        -webkit-backdrop-filter: blur(3.9px);
+        color: #ffffff;
+        background-color: #f7dc6fea;
+        border: 1px solid #fff;
 
     }
 
@@ -538,7 +529,7 @@
 
     .box>a>div {
         transition: all 0.3s ease-in-out;
-        background-color: #e1e6f0;
+       
         width: 170px;
         height: 230px;
         display: flex;
@@ -547,18 +538,9 @@
     }
 
     .action {
-        background-image: url('https://m.media-amazon.com/images/M/MV5BMmYwZjc3MTYtZjg4Ni00MWY3LThiNzctN2ZkOTVlMTMyOWMwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg');
-        background-position: center;
-        background-size: cover;
-        filter: opacity(1);
-        color: #ff4343;
-        /* From https://css.glass */
-        background: rgba(255, 255, 255, 0);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(3.9px);
-        -webkit-backdrop-filter: blur(3.9px);
-
+         color: #ffffff;
+        background-color: #f7dc6fea;
+        border: 1px solid #fff;
     }
 
     .action>h1 {
@@ -878,7 +860,7 @@
 
     .box>a>div {
         transition: all 0.3s ease-in-out;
-        background-color: #e1e6f0;
+        
         width: 170px;
         height: 230px;
         display: flex;
@@ -887,17 +869,9 @@
     }
 
     .action {
-        background-image: url('https://m.media-amazon.com/images/M/MV5BMmYwZjc3MTYtZjg4Ni00MWY3LThiNzctN2ZkOTVlMTMyOWMwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg');
-        background-position: center;
-        background-size: cover;
-        filter: opacity(1);
-        color: #ff4343;
-        /* From https://css.glass */
-        background: rgba(255, 255, 255, 0);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(3.9px);
-        -webkit-backdrop-filter: blur(3.9px);
+       color: #ffffff;
+        background-color: #f7dc6fea;
+        border: 1px solid #fff;
 
     }
 
