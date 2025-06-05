@@ -186,30 +186,36 @@
         width: 100%;
         transition: all 2s ease-in-out;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         row-gap: 5px;
         flex-wrap: wrap;
     }
 
    .box>a {
         text-decoration: none;
-        color: #16181f;
+        color: #ffffff;
         text-shadow: 10 10 10px #16181f;
     }
 
     .box>a>div {
         transition: all 0.3s ease-in-out;
+    
         width: 170px;
         height: 230px;
         display: flex;
         justify-content: center;
         align-items: center;
+          padding-bottom: 15px;
+        padding:0 5px;
     }
 
     .action {
+       background-image: url('https://img.freepik.com/free-psd/cinema-still-life-background_23-2150743148.jpg?t=st=1749149885~exp=1749153485~hmac=c1d0105d3312766fde191bf4f179357379a8357c1f5635443f580def60e31b68&w=1380');
         color: #ffffff;
-        background-color: #f7dc6fea;
+        background-size: contain;
+        background-repeat: no-repeat;
         border: 1px solid #fff;
+        border-radius: 3px;
 
     }
 
@@ -529,18 +535,24 @@
 
     .box>a>div {
         transition: all 0.3s ease-in-out;
-       
         width: 170px;
         height: 230px;
         display: flex;
         justify-content: center;
         align-items: center;
+          padding-bottom: 15px;
+        padding:0 5px;
     }
 
     .action {
-         color: #ffffff;
-        background-color: #f7dc6fea;
+       
+        background-image: url('https://img.freepik.com/free-psd/cinema-still-life-background_23-2150743148.jpg?t=st=1749149885~exp=1749153485~hmac=c1d0105d3312766fde191bf4f179357379a8357c1f5635443f580def60e31b68&w=1380');
+        color: #ffffff;
+        background-size: contain;
+        background-repeat: no-repeat;
         border: 1px solid #fff;
+        border-radius: 3px;
+
     }
 
     .action>h1 {
@@ -866,12 +878,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
+          padding-bottom: 15px;
+        padding:0 5px;
     }
 
     .action {
-       color: #ffffff;
-        background-color: #f7dc6fea;
+        background-image: url('https://img.freepik.com/free-psd/cinema-still-life-background_23-2150743148.jpg?t=st=1749149885~exp=1749153485~hmac=c1d0105d3312766fde191bf4f179357379a8357c1f5635443f580def60e31b68&w=1380');
+        color: #fffbfb;
+        background-size: contain;
+        background-repeat: no-repeat;
         border: 1px solid #fff;
+        border-radius: 3px;
 
     }
 
@@ -1238,12 +1255,16 @@
         height: 230px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: end;
+        padding-bottom: 15px;
+        padding:0 5px;
     }
 
     .action {
+        background-image: url('https://img.freepik.com/free-psd/cinema-still-life-background_23-2150743148.jpg?t=st=1749149885~exp=1749153485~hmac=c1d0105d3312766fde191bf4f179357379a8357c1f5635443f580def60e31b68&w=1380');
         color: #ffffff;
-        background-color: #f7dc6fea;
+        background-size: contain;
+        background-repeat: no-repeat;
         border: 1px solid #fff;
         border-radius: 3px;
 
