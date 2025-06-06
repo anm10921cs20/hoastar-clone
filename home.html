@@ -131,6 +131,7 @@
                                                                         <h2 class="h6 text-light">Nation : <span
                                                                                         class="h6 text-danger"
                                                                                         id="nation-details"></span></h2>
+                                                                                        <br>
                                                                         <h2 class="h6 text-light">Mobile Version : <span
                                                                                         class="h6 text-danger"
                                                                                         id="mobile-details"></span></h2>
@@ -1807,8 +1808,8 @@
         const mobile = document.getElementById('mobile-details');
         const desktop = document.getElementById('mobile-details1')
 
-        mobile.innerHTML = navigator.appName;
-        desktop.innerHTML = navigator.appName;
+        mobile.innerHTML = navigator.platform;
+        desktop.innerHTML = navigator.platform;
 
 </script>
 
