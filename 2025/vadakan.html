@@ -138,8 +138,7 @@
                                 360p</a></button>
                         <button onclick="btn2()"> <a class="a-download"><i class="fas fa-download "></i>
                                 720p</a></button>
-                        <button onclick="btn3()"> <a class="a-download"><i class="fas fa-download "></i>
-                                1080p</a></button>
+                                
                         <br><br>
                         <div class="javascript-alert">
                             <p class="text-success text-center" id="message-para"></p><span id="time"></span>
@@ -200,7 +199,7 @@
                     time.style.display = "none";
                     message.innerText = "Downloading Started...";
                     setTimeout(() => {
-                        window.location.href = "https://dl8.hotshare.top/DD_Next_Level_2025_HDRip_360p_HD.mp4"
+                        window.location.href = "https://dl5.hotshare.click/Vadakkan_2025_Original_360p_HD.mp4"
                     }, 1000)
                     message.timeout = setTimeout(() => {
                         message.innerHTML = "";
@@ -230,7 +229,7 @@
                     clearInterval(interval);
                     message.innerText = "Downloading Started...";
                     setTimeout(() => {
-                        window.location.href = "https://dl3.hotshare.click/Moviesda.Mobi_-_DD_Next_Level_2025_HDRip_720p_HD.mp4"
+                        window.location.href = "https://s10.hotshare.link/Vadakkan_2025_Original_720p_HD.mp4"
                     }, 1000)
                     message.timeout = setTimeout(() => {
                         message.textContent = "";
@@ -247,37 +246,7 @@
 
     }
 
-    //function 3
-
-    function btn3() {
-
-        function countdown3() {
-            const time = document.querySelector('#time');
-            const message = document.getElementById('message-para');
-            var counter = 6;
-            const interval = setInterval(() => {
-                counter--;
-                if (counter <= 0) {
-                    time.style.display = "none";
-                    clearInterval(interval);
-                    message.innerText = "Downloading Started...";
-                    setTimeout(() => {
-                        window.location.href = "https://s06.hotshare.link/Moviesda.Mobi_-_DD_Next_Level_2025_HDRip_1080p_HD.mp4"
-                    }, 1000)
-                    message.timeout = setTimeout(() => {
-                        message.textContent = "";
-                    }, 3000);
-                }
-                else {
-                    time.style.display = "block";
-                    time.innerText = "Please Wait For Downloading " + counter + "s";
-                    time.style.color = "#ff4343";
-                }
-            }, 1000);
-        }
-        countdown3();
-
-    }
+    
 
     const username = document.getElementById('username');
     const names = localStorage.getItem('name-value');
