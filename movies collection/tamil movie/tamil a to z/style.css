@@ -247,6 +247,13 @@
         margin-top: 12px;
         border-radius: 5px;
     }
+      .alphabet-buttons>button>a
+    {
+        text-decoration: none;
+        color: #000;
+        display: block;
+        padding: 10px;
+    }
     .next-forward
     {
         display: flex;
@@ -622,6 +629,8 @@
     {
         color: #000;
         text-decoration: none;
+        display: block;
+        padding: 10px;
     }
      .next-forward
     {
@@ -994,6 +1003,13 @@
         border: 2px solid #fff;
         margin-top: 12px;
         border-radius: 5px;
+    }
+      .alphabet-buttons>button>a
+    {
+        text-decoration: none;
+        color: #000;
+        display: block;
+        padding: 10px;
     }
      .next-forward
     {
@@ -1409,6 +1425,13 @@
         border: 2px solid #fff;
         margin-top: 12px;
         border-radius: 5px;
+    }
+    .alphabet-buttons>button>a
+    {
+        text-decoration: none;
+        color: #000;
+        display: block;
+        padding: 10px;
     }
      .next-forward
     {
