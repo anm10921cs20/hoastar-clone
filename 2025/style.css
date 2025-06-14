@@ -682,12 +682,7 @@ body {
     {
         display: none;
     }
-    .text-conect
-    {
-        text-align: center;
-        color: #fff;
-        padding: 0 35px 0 0px;
-    }
+   
     .footer-nav-bar>li
     {
         margin: 0 20px;
@@ -716,6 +711,12 @@ body {
         width: 100%;
         transition: width 0.6s ease-in-out;
     } 
+     .text-conect
+    {
+        text-align: start;
+        color: #fff;
+        padding: 100px 105px 0 0px;
+    }
 
 
 }
