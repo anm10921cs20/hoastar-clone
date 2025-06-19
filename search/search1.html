@@ -50,14 +50,14 @@
             </div>
             <!-- nav bar menu buttons -->
             <ul class="nav-menu">
-                <li><a href="../../home.html"><i class="fa-solid space fa-house"></i> Home</a></li>
-                <li><a href="../../movies collection/movie.html"><i class="fa-solid space fa-clapperboard"></i>
+                <li><a href="../../index.html"><i class="fa-solid space fa-house"></i> Home</a></li>
+                <li><a href="../../movies collection/movie1.html"><i class="fa-solid space fa-clapperboard"></i>
                         Movies</a>
                 </li>
-                <li><a href="../../search/search.html"><i class="fa-solid space fa-magnifying-glass"></i> Search</a>
+                <li><a href="../../search/search1.html"><i class="fa-solid space fa-magnifying-glass"></i> Search</a>
                 </li>
-                <li><a href="../../actor collection/actor.html"><i class="fa-solid space fa-user"></i> Actors</a></li>
-                <li><a href="../index.html" target="_blank"><i class="fa-solid space fa-wrench"></i> Back</a></li>
+                <li><a href="../../actor collection1/actor.html"><i class="fa-solid space fa-user"></i> Actors</a></li>
+                <li><a href="../index.html" target="_blank"><i class="fa-solid space fa-wrench"></i> Login</a></li>
             </ul>
             <img src="../../images/43_Amazing_Business_Logos_With_High_ROI_-_99designs-removebg-preview.png"
                 width="120px" height="120px" class="img-logo-nav" alt="">
@@ -67,8 +67,8 @@
         <div class="main-content">
             <br>
             <div class="input">
-                <br><br>
-                <h1>Search Tamil Movies (2024)</h1><br>
+                <br>
+                <h1>Search Movies</h1><br>
     <input type="text" id="searchInput" class="search-bar" placeholder="Search for a Tamil movie...">
     <ul id="results"></ul>
             </div>
@@ -133,7 +133,7 @@
        
 
         // For demonstration, let's auto-generate 200+ dummy movie entries
-        for (let i = movieFiles.length + 1; i <= 200; i++) {
+        for (let i = movieFiles.length + 1; i <= 300; i++) {
             movieFiles.push({
                 title: `Tamil Movie ${i} 2024`,
                 file: `2024/tamil-movie-${i}.html`
@@ -162,6 +162,7 @@
             });
 
             if (filtered.length === 0) {
+                results.style.color = 'red';
                 results.innerHTML = '<li>No results found.</li>';
             }
         });
@@ -253,7 +254,7 @@
     }
 
     // Add more dummy movies to reach 300+ for demonstration
-    for (let i = 201; i <= 300; i++) {
+    for (let i = 0; i <= 300; i++) {
         posterMap[`Tamil Movie ${i} 2024`] = "https://via.placeholder.com/48x72?text=No+Image";
     }
 
@@ -292,5 +293,62 @@
             results.innerHTML = '<li>No results found.</li>';
         }
     });
+
+    let recentSearches = JSON.parse(localStorage.getItem('recentSearches') || '[]');    
+
+    function updateRecentSearches(query) {
+        if (!query || !query.trim()) return;
+        // Remove if already exists
+        recentSearches = recentSearches.filter(q => q.toLowerCase() !== query.toLowerCase());
+        // Add to front
+        recentSearches.unshift(query);
+        // Limit to 5
+        recentSearches = recentSearches.slice(0, 5);
+        localStorage.setItem('recentSearches', JSON.stringify(recentSearches));
+        renderRecentSearches();
+    }
+
+    function renderRecentSearches() {
+        let recentDiv = document.getElementById('recent-searches');
+        if (!recentDiv) {
+            recentDiv = document.createElement('div');
+            recentDiv.id = 'recent-searches';
+            recentDiv.style.marginTop = '10px';
+            results.parentNode.insertBefore(recentDiv, results);
+        }
+        if (recentSearches.length === 0) {
+            recentDiv.innerHTML = '';
+            return;
+        }
+        recentDiv.style.color = '#43d';
+        recentDiv.style.paddingLeft = '20px';
+        recentDiv.innerHTML = '<strong>Recent Searches:</strong> ' + recentSearches.map(q =>
+            `<a href="#" class="recent-search-link" style="margin-right:8px">${q}</a>`
+        ).join('');
+        // Add click event to recent search links
+        recentDiv.querySelectorAll('.recent-search-link').forEach(link => {
+            link.onclick = function(e) {
+                e.preventDefault();
+                searchInput.value = this.textContent;
+                searchInput.dispatchEvent(new Event('input'));
+            };
+        });
+    }
+
+    // Save search on Enter key
+    searchInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+            updateRecentSearches(this.value);
+        }
+    });
+
+    // Also save when user clicks a result
+    results.addEventListener('click', function(e) {
+        if (e.target.tagName === 'A' && e.target.classList.contains('movie-link')) {
+            updateRecentSearches(searchInput.value);
+        }
+    });
+
+    renderRecentSearches();
 </script>
 </html>
