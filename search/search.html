@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="theme-color" content="#ff4343">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahan Movies-Movies </title>
+    <title>Mahan Movies-Search </title>
     <!--Bootstrap css added-->
     <link rel="stylesheet" href="../../bootstrap-5.3.5-dist/css/bootstrap.min.css">
 
@@ -50,7 +50,7 @@
             </div>
             <!-- nav bar menu buttons -->
             <ul class="nav-menu">
-                <li><a href="../../index.html"><i class="fa-solid space fa-house"></i> Home</a></li>
+                <li><a href="../../home.html"><i class="fa-solid space fa-house"></i> Home</a></li>
                 <li><a href="../../movies collection/movie.html"><i class="fa-solid space fa-clapperboard"></i>
                         Movies</a>
                 </li>
@@ -78,8 +78,12 @@
     <script>
         // 2024 Tamil movies (sample of 200+ names)
         const movieFiles = [
+        //webseries files
+        //a series files
+        //2024 files
+        //2025 files
             { title: "Aavesham 2024", file: "../2024/aavesham.html" },
-            { title: "Indian 2 2024", file: "2024/indian-2.html" },
+            { title: "Aay 2024", file: "../2024/aay.html" },
             { title: "Thangalaan 2024", file: "2024/thangalaan.html" },
             { title: "Vidaa Muyarchi 2024", file: "2024/vidaa-muyarchi.html" },
             { title: "GOAT 2024", file: "2024/goat.html" },
@@ -87,7 +91,7 @@
             { title: "Garudan 2024", file: "2024/garudan.html" },
             { title: "Rathnam 2024", file: "2024/rathnam.html" },
             { title: "Siren 2024", file: "2024/siren.html" },
-            { title: "Lal Salaam 2024", file: "2024/lal-salaam.html" },
+            { title: "Lal Salaam 2024", file: "../2025/laalsalam.html" },
             { title: "Captain Miller 2024", file: "2024/captain-miller.html" },
             { title: "Ayalaan 2024", file: "2024/ayalaan.html" },
             { title: "Mission Chapter 1 2024", file: "2024/mission-chapter-1.html" },
@@ -133,12 +137,7 @@
        
 
         // For demonstration, let's auto-generate 200+ dummy movie entries
-        for (let i = movieFiles.length + 1; i <= 300; i++) {
-            movieFiles.push({
-                title: `Tamil Movie ${i} 2024`,
-                file: `2024/tamil-movie-${i}.html`
-            });
-        }
+        
 
         const searchInput = document.getElementById('searchInput');
         const results = document.getElementById('results');
@@ -208,8 +207,8 @@
 <script>
     // Map movie titles to poster URLs (200+ Tamil movies, using IMDb or TMDb posters where possible)
     const posterMap = {
-        "Aavesham 2024": "https://m.media-amazon.com/images/M/MV5BNjI4ZjRjNmQtYjE1ZC00M2MyLThhMmEtM2NkZDA3ZGJmZDQxXkEyXkFqcGc@._V1_FMjpg_UX683_.jpg",
-        "Indian 2 2024": "https://m.media-amazon.com/images/M/MV5BODg2YjYxYzUtYjQxZi00YjA2LTkzYzgtYjYzYjQ2YjYxYjYxXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_FMjpg_UX1000_.jpg",
+        "Aavesham 2024": "https://m.media-amazon.com/images/M/MV5BMDhjODljMzktMmM4Zi00ODFkLWFkM2EtOTM3MTdmYTMyMTVkXkEyXkFqcGc@._V1_FMjpg_UX1200_.jpg",
+        "Aay 2024": "https://m.media-amazon.com/images/M/MV5BMTc2NzI1OGMtMjRiOC00MzNjLWJlNmQtZWMwNmIwYmY4MGJiXkEyXkFqcGc@._V1_FMjpg_UY2048_.jpg",
         "Thangalaan 2024": "https://m.media-amazon.com/images/M/MV5BMjA2YjYxYzUtYjQxZi00YjA2LTkzYzgtYjYzYjQ2YjYxYjYxXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_FMjpg_UX1000_.jpg",
         "Vidaa Muyarchi 2024": "https://m.media-amazon.com/images/M/MV5BMjA3YjYxYzUtYjQxZi00YjA2LTkzYzgtYjYzYjQ2YjYxYjYxXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_FMjpg_UX1000_.jpg",
         "GOAT 2024": "https://m.media-amazon.com/images/M/MV5BMjA4YjYxYzUtYjQxZi00YjA2LTkzYzgtYjYzYjQ2YjYxYjYxXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_FMjpg_UX1000_.jpg",
@@ -217,7 +216,7 @@
         "Garudan 2024": "https://m.media-amazon.com/images/M/MV5BMjE3YjYxYzUtYjQxZi00YjA2LTkzYzgtYjYzYjQ2YjYxYjYxXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_FMjpg_UX1000_.jpg",
         "Rathnam 2024": "https://m.media-amazon.com/images/M/MV5BMjE4YjYxYzUtYjQxZi00YjA2LTkzYzgtYjYzYjQ2YjYxYjYxXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_FMjpg_UX1000_.jpg",
         "Siren 2024": "https://m.media-amazon.com/images/M/MV5BMjE5YjYxYzUtYjQxZi00YjA2LTkzYzgtYjYzYjQ2YjYxYjYxXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_FMjpg_UX1000_.jpg",
-        "Lal Salaam 2024": "https://m.media-amazon.com/images/M/MV5BMjIwYjYxYzUtYjQxZi00YjA2LTkzYzgtYjYzYjQ2YjYxYjYxXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_FMjpg_UX1000_.jpg",
+        "Lal Salaam 2024": "https://m.media-amazon.com/images/M/MV5BYjA2YzQzNmQtOWQ0MS00NDEzLWIzNjMtOTA0YTMxMzFmMzdhXkEyXkFqcGc@._V1_FMjpg_UY2048_.jpg",
         "Captain Miller 2024": "https://m.media-amazon.com/images/M/MV5BMjIxYjYxYzUtYjQxZi00YjA2LTkzYzgtYjYzYjQ2YjYxYjYxXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_FMjpg_UX1000_.jpg",
         "Ayalaan 2024": "https://m.media-amazon.com/images/M/MV5BMjIyYjYxYzUtYjQxZi00YjA2LTkzYzgtYjYzYjQ2YjYxYjYxXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_FMjpg_UX1000_.jpg",
         "Mission Chapter 1 2024": "https://m.media-amazon.com/images/M/MV5BMjIzYjYxYzUtYjQxZi00YjA2LTkzYzgtYjYzYjQ2YjYxYjYxXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_FMjpg_UX1000_.jpg",

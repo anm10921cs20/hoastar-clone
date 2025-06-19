@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="theme-color" content="#ff4343">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahan Movies-Movies </title>
+    <title>Mahan Movies-Search </title>
     <!--Bootstrap css added-->
     <link rel="stylesheet" href="../../bootstrap-5.3.5-dist/css/bootstrap.min.css">
 
@@ -79,7 +79,7 @@
         // 2024 Tamil movies (sample of 200+ names)
         const movieFiles = [
             { title: "Aavesham 2024", file: "../2024/aavesham.html" },
-            { title: "Indian 2 2024", file: "2024/indian-2.html" },
+            { title: "aay 2024", file: "2024/indian-2.html" },
             { title: "Thangalaan 2024", file: "2024/thangalaan.html" },
             { title: "Vidaa Muyarchi 2024", file: "2024/vidaa-muyarchi.html" },
             { title: "GOAT 2024", file: "2024/goat.html" },
@@ -133,12 +133,7 @@
        
 
         // For demonstration, let's auto-generate 200+ dummy movie entries
-        for (let i = movieFiles.length + 1; i <= 300; i++) {
-            movieFiles.push({
-                title: `Tamil Movie ${i} 2024`,
-                file: `2024/tamil-movie-${i}.html`
-            });
-        }
+       
 
         const searchInput = document.getElementById('searchInput');
         const results = document.getElementById('results');
