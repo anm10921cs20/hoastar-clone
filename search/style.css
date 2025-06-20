@@ -121,7 +121,7 @@
     }
     .search-bar:focus,.search-bar:hover {
         outline: none;
-        border: 2px solid #ff4343;
+        border: 1px solid #ff4343;
     }
 
     .input>ul {
