@@ -322,7 +322,7 @@
 
     .main-content {
         background: rgb(15, 16, 20);
-        height: 1214px;
+        height: 1143px;
         position: fixed;
         width: 100%;
         top: 0;
@@ -377,6 +377,7 @@
         outline: none;
         border: 2px solid #ff4343;
     }
+   
 
     .input>ul {
         list-style: none;
