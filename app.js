@@ -17,6 +17,50 @@ btnrght1.addEventListener('click',()=>
 {
     gallery1.scrollLeft += 190;
 });
+//recent added
+
+const gallery11 = document.querySelector('.box11');
+const btnlft11 =  document.querySelector('.button-arrow11');
+const btnrght11 =  document.querySelector('.button-arrow21');
+
+gallery11.addEventListener('wheel',(evt)=>
+{
+    evt.preventDefault();
+     gallery11.scrollLeft+=evt.deltaY;
+});
+
+btnlft11.addEventListener('click',() =>
+{
+    gallery11.scrollLeft -= 190;
+}
+);
+btnrght11.addEventListener('click',()=>
+{
+    gallery11.scrollLeft += 190;
+});
+
+//web series
+
+const gallery1w = document.querySelector('.box1w');
+const btnlft1w =  document.querySelector('.button-arrow1w');
+const btnrght1w =  document.querySelector('.button-arrow2w');
+
+gallery1w.addEventListener('wheel',(evt)=>
+{
+    evt.preventDefault();
+     gallery1w.scrollLeft+=evt.deltaY;
+});
+
+btnlft1w.addEventListener('click',() =>
+{
+    gallery1w.scrollLeft -= 190;
+}
+);
+btnrght1w.addEventListener('click',()=>
+{
+    gallery1w.scrollLeft += 190;
+});
+
 
 //box container 2
 
@@ -100,6 +144,47 @@ gallery1.addEventListener('touchmove', (e) => {
 });
 
 gallery1.addEventListener('touchend', () => {
+    isDown1 = false;
+});
+
+//recent added
+
+gallery11.addEventListener('touchstart', (e) => {
+    isDown1 = true;
+    startX1 = e.touches[0].pageX - gallery11.offsetLeft;
+    scrollLeft1 = gallery11.scrollLeft;
+});
+
+gallery11.addEventListener('touchmove', (e) => {
+    if (!isDown1) return;
+    e.preventDefault();
+    const x = e.touches[0].pageX - gallery11.offsetLeft;
+    const walk = (startX1 - x);
+    gallery11.scrollLeft = scrollLeft1 + walk;
+});
+
+gallery11.addEventListener('touchend', () => {
+    isDown1 = false;
+});
+
+
+//webseries
+
+gallery1w.addEventListener('touchstart', (e) => {
+    isDown1 = true;
+    startX1 = e.touches[0].pageX - gallery1w.offsetLeft;
+    scrollLeft1 = gallery1w.scrollLeft;
+});
+
+gallery1w.addEventListener('touchmove', (e) => {
+    if (!isDown1) return;
+    e.preventDefault();
+    const x = e.touches[0].pageX - gallery1w.offsetLeft;
+    const walk = (startX1 - x);
+    gallery1w.scrollLeft = scrollLeft1 + walk;
+});
+
+gallery1w.addEventListener('touchend', () => {
     isDown1 = false;
 });
 
