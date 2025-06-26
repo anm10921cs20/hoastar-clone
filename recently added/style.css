@@ -193,7 +193,10 @@
     .box>a>img
     {
         transition: all 0.3s ease-in-out;
+         width: 130px;
+        height: 170px;
     }
+    
     .box>a>img:hover
     {
         transform: scale(1.1);
@@ -494,9 +497,11 @@
         row-gap: 5px;
         flex-wrap: wrap;
     }
-    .box>a>img
+   .box>a>img
     {
         transition: all 0.3s ease-in-out;
+         width: 130px;
+        height: 170px;
     }
     .box>a>img:hover
     {
@@ -799,9 +804,11 @@
         row-gap: 5px;
         flex-wrap: wrap;
     }
-    .box>a>img
+     .box>a>img
     {
         transition: all 0.3s ease-in-out;
+         width: 130px;
+        height: 170px;
     }
     .box>a>img:hover
     {

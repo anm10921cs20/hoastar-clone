@@ -190,9 +190,12 @@
         row-gap: 5px;
         flex-wrap: wrap;
     }
-    .box>a>img
+     .box>a>img
     {
         transition: all 0.3s ease-in-out;
+         border-radius: 5px;
+        height: 170px;
+        width: 130px;
     }
     .box>a>img:hover
     {
@@ -494,9 +497,12 @@
         row-gap: 5px;
         flex-wrap: wrap;
     }
-    .box>a>img
+     .box>a>img
     {
         transition: all 0.3s ease-in-out;
+         border-radius: 5px;
+        height: 170px;
+        width: 130px;
     }
     .box>a>img:hover
     {
@@ -799,9 +805,12 @@
         row-gap: 5px;
         flex-wrap: wrap;
     }
-    .box>a>img
+     .box>a>img
     {
         transition: all 0.3s ease-in-out;
+         border-radius: 5px;
+        height: 170px;
+        width: 130px;
     }
     .box>a>img:hover
     {
