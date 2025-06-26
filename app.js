@@ -122,6 +122,46 @@ btnrght4.addEventListener('click',()=>
     gallery4.scrollLeft += 190;
 })
 
+//box actors
+
+const gallery22 = document.querySelector('.box12');
+const btnlft22 =  document.querySelector('.button-arrow12');
+const btnrght22 =  document.querySelector('.button-arrow22');
+
+gallery22.addEventListener('wheel',(evt1)=>
+{
+    evt1.preventDefault();
+    gallery22.scrollLeft+=evt1.deltaY;
+})
+btnlft22.addEventListener('click',()=>
+{
+    gallery22.scrollLeft -= 190;
+})
+btnrght22.addEventListener('click',()=>
+{
+    gallery22.scrollLeft += 190;
+})
+//box actors
+
+const gallery23 = document.querySelector('.box13');
+const btnlft23 =  document.querySelector('.button-arrow13');
+const btnrght23 =  document.querySelector('.button-arrow23');
+
+gallery23.addEventListener('wheel',(evt1)=>
+{
+    evt1.preventDefault();
+    gallery23.scrollLeft+=evt1.deltaY;
+})
+btnlft23.addEventListener('click',()=>
+{
+    gallery23.scrollLeft -= 190;
+})
+btnrght23.addEventListener('click',()=>
+{
+    gallery23.scrollLeft += 190;
+})
+
+
 
 //mobile scroll
 
@@ -245,5 +285,45 @@ gallery4.addEventListener('touchmove', (e) => {
 });
 
 gallery4.addEventListener('touchend', () => {
+    isDown1 = false;
+});
+
+//actor
+
+
+gallery22.addEventListener('touchstart', (e) => {
+    isDown1 = true;
+    startX1 = e.touches[0].pageX - gallery22.offsetLeft;
+    scrollLeft1 = gallery22.scrollLeft;
+});
+
+gallery22.addEventListener('touchmove', (e) => {
+    if (!isDown1) return;
+    e.preventDefault();
+    const x = e.touches[0].pageX - gallery22.offsetLeft;
+    const walk = (startX1 - x);
+    gallery22.scrollLeft = scrollLeft1 + walk;
+});
+
+gallery22.addEventListener('touchend', () => {
+    isDown1 = false;
+});
+
+//genere
+gallery23.addEventListener('touchstart', (e) => {
+    isDown1 = true;
+    startX1 = e.touches[0].pageX - gallery23.offsetLeft;
+    scrollLeft1 = gallery23.scrollLeft;
+});
+
+gallery23.addEventListener('touchmove', (e) => {
+    if (!isDown1) return;
+    e.preventDefault();
+    const x = e.touches[0].pageX - gallery23.offsetLeft;
+    const walk = (startX1 - x);
+    gallery23.scrollLeft = scrollLeft1 + walk;
+});
+
+gallery23.addEventListener('touchend', () => {
     isDown1 = false;
 });
